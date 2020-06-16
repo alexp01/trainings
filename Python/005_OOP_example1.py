@@ -26,6 +26,7 @@ student1.grades.append(100)
 print (student1.average())
 
 # adding @properly makes that method to became a property as it only calculated something, and does not do complex things
+# the advantage is that you can call that method with .weekSalary and not .weekSalary()
 print (student1.weekSalary)
 
 

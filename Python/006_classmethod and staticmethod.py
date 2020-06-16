@@ -1,3 +1,5 @@
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/9417826#overview
+
 class Foo:
     @classmethod
     def hi(cls):

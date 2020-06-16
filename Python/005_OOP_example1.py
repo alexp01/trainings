@@ -1,3 +1,5 @@
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/9417806#overview
+
 class Student:
     def __init__(self, name, school):
         self.name = name

@@ -1,3 +1,5 @@
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/9417828#overview
+
 # Rules:
 # - staticmethods should not be used. If used you needt o be sure that that object will not be inherited
 # - classmethod will be used when you do not want to use the self from the inherited class, and you prefer using you own internal self

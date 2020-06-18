@@ -1,14 +1,21 @@
+# Errors:
+IndexError : when you want to acces an index that does not exist, list in a list of 2 element you ask for list[5].
+KeyErros : when you call a key of something that does noy exist, like a dict home[...age...name...sex] and you call it with home['hight'].
+NameError : when you call a var that is not defined, like calling print(hello), where hello is not even defined.
+
+
+# Namings
 Object e variabila ce primeste un class
 Method e o functie intro clasa
 Property e o 'variabila' intro clas
 argument e variabila trimisa cand apelam o metoda dintro clasa. Primul parametru e dedicata pt self.
 parametru e variabila ce o poate primi o metoda : exemplu def alex (name):
 
-
+# Tricks:
 - "class.__name__" will give you the class name
 
 
-Rules:
+#Rules:
 - staticmethods should not be used. If used you needt o be sure that that object will not be inherited
 - classmethod will be used when you do not want to use the self from the inherited class, and you prefer using you own internal self
 

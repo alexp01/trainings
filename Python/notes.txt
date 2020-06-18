@@ -1,15 +1,27 @@
 # Errors:
-IndexError : when you want to acces an index that does not exist, list in a list of 2 element you ask for list[5].
-KeyErros : when you call a key of something that does noy exist, like a dict home[...age...name...sex] and you call it with home['hight'].
-NameError : when you call a var that is not defined, like calling print(hello), where hello is not even defined.
-
+- IndexError : when you want to acces an index that does not exist, list in a list of 2 element you ask for list[5].
+- KeyErros : when you call a key of something that does noy exist, like a dict home[...age...name...sex] and you call it with home['hight'].
+- NameError : when you call a var that is not defined, like calling print(hello), where hello is not even defined.
+- AttributeError:  when you call a method of an Object that does not exist, for example you have 2 lists and you use the function list1.intersection(list2). You can use the intersectin function for sets but not lists.
+- NotImplementedError : its not available as default and it needs to be called, and to use it you just do : raise NotImplementedError ('text'). You could use it inside function that do nothing for the moment
+- RunTimeError : a not so used error, not clear when it appears and why. It will apear randomly when the program runs.
+- SyntaxError: when pythin does not understand what you wrote. You do not fallow the rules on python syntax.
+- IndentationError: when you do not use properly indentation (4 spaces in the begining of a line)
+- TabError : when you indent in different ways like you use 4 spaces and also tab to indent. Python expects that you indent in the same way inside a file.
+- TypeError : when you do something that you should not do, for example add a str to a int : "hi" + 5
+- ValueError : when you call a built in function, or normal function with the correct variable but its value is not the corect one. Like : "int("20.5")". This will give an error ad its better to convert to floar a string that contain a number with decimals.
+- ImportError : Its called also a circular import. When you have 1 scripts that calls anoter script with an import, and the other one calls also the first script with an import. It creates a loop that will call script1->script2->script1 ....
+- DeprecationError : its not available as default and it needs to be called. You can call it when you want to say that a specific code could still be used but its deprcated, as there is a new code that could replace it. You call it with : raise DepricatedError ('text')
 
 # Namings
-Object e variabila ce primeste un class
-Method e o functie intro clasa
-Property e o 'variabila' intro clas
-argument e variabila trimisa cand apelam o metoda dintro clasa. Primul parametru e dedicata pt self.
-parametru e variabila ce o poate primi o metoda : exemplu def alex (name):
+Object:  will inherit a class and all its content
+Method: is a function is a class.
+Property: a variable in a class
+Argument : is a variable used when we call a method in a class. The first argument is always the self one.
+Parameter: is the variables that are accepted by a method, exemple def alex (name):
+__init__ : is called a contructor
+Traceback : its the way we see error details. It shows first the line where the error happens and then geoes up in function until the main call was done that trigerred that error.
+
 
 # Tricks:
 - "class.__name__" will give you the class name

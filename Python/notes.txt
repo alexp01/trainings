@@ -21,10 +21,15 @@ Argument : is a variable used when we call a method in a class. The first argume
 Parameter: is the variables that are accepted by a method, exemple def alex (name):
 __init__ : is called a contructor
 Traceback : its the way we see error details. It shows first the line where the error happens and then geoes up in function until the main call was done that trigerred that error.
-
+Constructor : is the method from a class that will be executed when an object is defined
 
 # Tricks:
-- "class.__name__" will give you the class name
+- "class.__name__" will give you the class name.
+- "pass" is used to just skip a block when you don't know what logic to put inside tat block.
+- we can use multiline string to have strings on multiple lines:
+"""this is the first line
+and this is the second
+third etc..."""
 
 
 #Rules:

@@ -4,6 +4,7 @@ class User:
         self.data = data
         self.user_score = 0
 
+
 def check_if_email_needs_to_be_sent(user_info):
     try:
         user_info.score = calculate_score(user_info.data)

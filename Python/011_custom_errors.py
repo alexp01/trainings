@@ -7,6 +7,7 @@
 # you dont have to use TypeError or other predifined Error types. You could use a generic one called Exception
 
 class MyCustomError_with_code(TypeError):
+
     """
     Here you can describe you function purpose
     In a multi line string

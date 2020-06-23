@@ -1,3 +1,4 @@
+
 # Errors:
 - IndexError : when you want to acces an index that does not exist, list in a list of 2 element you ask for list[5].
 - KeyErros : when you call a key of something that does noy exist, like a dict home[...age...name...sex] and you call it with home['hight'].

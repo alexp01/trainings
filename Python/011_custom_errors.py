@@ -16,9 +16,12 @@ class MyCustomError_with_code(TypeError):
         super().__init__(f'The error code : {code} with message : {message}')
         self.code = code
 
-raise MyCustomError_with_code('This is the error message', 500)
+def raise_error_in_number_is_negative(n):
+    if n < 0:
+        raise MyCustomError_with_code('This is the error message', 500)
 
 # DocString is a special text added in a form of a multiline string and can be added to the begining of a file
 # or bellow a class, or method or function.
 # Its purpose is to describe them, and there are special reports that extarct all DocString for documentation purposes
 
+raise_error_in_number_is_negative(-5)

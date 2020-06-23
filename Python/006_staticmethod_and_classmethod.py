@@ -5,7 +5,7 @@ class Foo:
     def hi(cls):
         print(cls.__name__)
 
-# you use a static method when you don't need the full class content buut just that method. You don't also need the self properties also.
+# you use a static method when you don't need the full class content but just that method. You don't also need the self properties also.
 class Boo:
     @staticmethod
     def hi():

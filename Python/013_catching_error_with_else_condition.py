@@ -5,6 +5,8 @@ class User:
         self.user_score = 0
 
 
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/9445266#questions
+
 def check_if_email_needs_to_be_sent(user_info):
     try:
         user_info.score = calculate_score(user_info.data)

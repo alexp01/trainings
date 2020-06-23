@@ -35,6 +35,7 @@ except ValueError:
     print('Something is not good')
 finally:
     print (f'The garage now has {len(ford)} cars')
+# 'finally' will always execute even if we catch or not any errors.
 
 # example
 try:

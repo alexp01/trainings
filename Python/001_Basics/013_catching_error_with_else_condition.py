@@ -4,6 +4,8 @@ class User:
         self.data = data
         self.user_score = 0
 
+    def __repr__(self):
+        return (f'Name: {self.name}, Data: {self.data}')
 
 # https://www.udemy.com/course/the-complete-python-course/learn/lecture/9445266#questions
 
@@ -22,7 +24,7 @@ def check_if_email_needs_to_be_sent(user_info):
     # User case: the GSM consumption of a user
 
 def calculate_score(user_data):
-    return user_data['clicks']*5 + user_data['hints']*2
+    return user_data['click']*5 + user_data['hints']*2
 
 def send_notification_to_user(user_name):
     print ('This will simulate an email that is sent to the user')

@@ -1,0 +1,4 @@
+name,age,univertity,degree
+john bolt,34,mit,math and science
+billy,40,oxford university,medicine
+bob,24,univ_1,computer science

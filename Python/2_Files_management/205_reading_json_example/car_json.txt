@@ -1,0 +1,1 @@
+[{"type": "Skoda", "price": "24000"}, {"type": "Fiat", "price": "15000"}]

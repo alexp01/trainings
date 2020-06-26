@@ -1,0 +1,3 @@
+italy,rome,4mil
+france,paris,2mil
+germany,berlin,5mil

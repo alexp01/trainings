@@ -24,6 +24,8 @@ __init__ : is called a contructor
 Traceback : its the way we see error details. It shows first the line where the error happens and then geoes up in function until the main call was done that trigerred that error.
 Constructor : is the method from a class that will be executed when an object is defined
 List comprehencion : x =0, y = [x+1 for x in range[0,9]]. Y will be a list : [0, 1, 2, ..., 9]
+Module : is the file executed when calling it by import
+Package : folder that contains libraries
 
 # Tricks:
 - "class.__name__" will give you the class name.

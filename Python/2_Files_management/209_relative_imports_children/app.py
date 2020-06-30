@@ -9,3 +9,6 @@ print(__name__)
 
 # the name printed is __main_-as this is the way pythin sees this main app that was first run.
 # the same print in second_import.py script will print he path of that py file.
+
+# !!1 i do not manage to use first_import.py
+# probably because of the folder hierarchy i use !!!!!!!!!!!!!!!!!!!!!

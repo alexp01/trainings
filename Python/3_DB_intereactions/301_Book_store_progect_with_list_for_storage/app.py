@@ -48,7 +48,6 @@ def menu():
         main_menu_option = input(main_menu_options)
 
 def write_in_list_from_file():
-    global book
     database_file = open('database.txt', 'r')
     database_content = database_file.readlines()
     database_file.close()
@@ -59,13 +58,11 @@ def write_in_list_from_file():
     print (book)
 
 def update_file_from_list():
-    global book
     database_file2 = open('database.txt', 'w')
     database_file2.writelines((lines['name']+','+lines['author']+','+lines['read']+'\n') for lines in book)
     database_file2.close()
 
 def add_a_book(name, author):
-    global book
     book.append(dict([('name',name),('author',author),('read',False)]))
 
 def delete_a_book(name,author):
@@ -75,9 +72,9 @@ def delete_a_book(name,author):
     return temp_book
 
 def list_all_book():
-    global book
     for line in book:
-        print(line, '\n')
+        read = 'YES' if line['read'] else 'NO' # if line[read] is TRUE then the read var will get the 'YES' value
+        print(f"{line['name']} by {line['author']}, read : {read}")
 
 def mark_as_read(name):
     global book

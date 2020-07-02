@@ -1,6 +1,7 @@
 
 # scope: To +,-,* and \ by just using the sum method.
 # https://www.udemy.com/course/the-complete-python-course/learn/quiz/4424524#questions/11460302
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/10185706#questions/11460302
 
 from Addition import Addition
 
@@ -23,8 +24,11 @@ class Calcultor_class:
             self.subs_op()
             return (f'Your Division result is {self.value1} - {self.value2} = {self.total}\n')
         elif self.operation == 'd':
-            self.division_op()
-            return (f'Your Division result is {self.value1} \ {self.value2} = {self.total}\n')
+            if self.value2 == 0:
+                return ('You have to give a non zero integer number')
+            else:
+                self.division_op()
+                return (f'Your Division result is {self.value1} \ {self.value2} = {self.total}\n')
 
     def Add_op(self):
         self.total = Addition_operation.add(self.value1, self.value2)

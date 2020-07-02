@@ -34,6 +34,7 @@ Package : folder that contains libraries
 """this is the first line
 and this is the second
 third etc..."""
+- when you import, you run the full content of that module and you have the met available
 
 
 #Rules:

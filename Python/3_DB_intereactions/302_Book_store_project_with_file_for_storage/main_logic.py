@@ -1,9 +1,13 @@
 """
-API with logic for file storage
+API with logic for file storage in CVS format
 """
 
 file_to_store = 'database.txt'
 print (file_to_store)
+
+def check_if_file_exists():
+    with open(file_to_store, 'w'): # this will create the file in case it does not exist
+        pass
 
 def read_from_file():
     with open(file_to_store, 'r') as file:

@@ -1,4 +1,4 @@
-from main_logic import read_from_file, mark_as_read, add_a_book, delete_a_book
+from main_logic import read_from_file, mark_as_read, add_a_book, delete_a_book, check_if_file_exists
 
 # https://www.udemy.com/course/the-complete-python-course/learn/lecture/9445320#questions/11460302
 
@@ -12,6 +12,8 @@ MENU :
 _"""
 
 def menu():
+    #print(check_if_file_exists()) # if i call this it will delete the content of the existing txt file. Don't know why yet as i don't write on it.
+    create_db()
     menu_option = input(book_menu_options)
     while menu_option != 'q':
         if menu_option == 'a':

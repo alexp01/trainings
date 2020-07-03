@@ -1,3 +1,0 @@
-Book3,Author3,0
-Book2,Author2,0
-Book number 1,Author number 1,0

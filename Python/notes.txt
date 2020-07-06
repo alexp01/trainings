@@ -36,6 +36,7 @@ and this is the second
 third etc..."""
 - when you import, you run the full content of that module and you have the met available
 - Do not change a list content while you iterate on it. Its a bad practice. Use list comprehension with condition to create another list.
+- 1 is seen as True and 0 as False.
 
 #Rules:
 - staticmethods should not be used. If used you needt o be sure that that object will not be inherited

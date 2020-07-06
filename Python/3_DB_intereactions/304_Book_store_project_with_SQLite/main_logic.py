@@ -7,48 +7,38 @@ import sqlite3
 def create_db():
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
-
-    cursor.execute('CREATE TABLE BOOKS (NAME text primary key, AUTHOR text, READ integer)')
-    cursor.execute('INSERT INTO BOOKS VALUES ('Book1', 'Author1', 0)')
-    cursor.execute('SELECT * FROM BOOKS')
+    cursor.execute('CREATE TABLE IF NOT EXISTS BOOKS(NAME text primary key, AUTHOR text, READ integer)')
     connection.commit()
-
     connection.close()
 
-def check_if_file_exists():
-    with open(file_to_store, 'w'): # this will create the file in case it does not exist
-        pass
-
 def read_from_file():
-     with open(file_to_store, 'r') as file:
-        books = json.load(file)
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    cursor.execute('SELECT * FROM BOOKS')
+    books = [{'name' : row[0], 'author' : row[1], 'read' : row[2]} for row in cursor.fetchall()]
+    print (books)
+    connection.close()
     return books
 
 def add_a_book(name,author):
-    books = read_from_file()
-    books.append(dict([('name', name), ('author', author), ('read', '0')]))
-    # We can skip the dict and just add a dict as an list element like : {'name' = name, 'author' = author, 'read' = '0' }
-    write_to_file(books)
-
-def mark_as_read(name):
-    books = read_from_file()
-    for book in books:
-        if book['name'] == name:
-            book['read'] = '1'
-    write_to_file(books)
-
-def delete_a_book(name):
-    books = read_from_file()
-    books = [book for book in books if book['name'] != name]
-    write_to_file(books)
-
-def write_to_file(books):
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
-    cursor.execute('sadsad')
-    #connection.commit()
+    #cursor.execute(f'INSERT INTO BOOKS VALUES("{name}","{author}", 0)')
+    # by doing the above method, SQLITE will validate that the inserted variable don't contain anything dangerous like DROP TABLE BOOKS etc...
+    cursor.execute(f'INSERT INTO BOOKS VALUES(?,?, 0)', (name,author))
+    connection.commit()
     connection.close()
 
-    with open(file_to_store, 'w') as file:
-        json.dump(books,file)
+def mark_as_read(name):
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    cursor.execute(f'UPDATE BOOKS SET READ = 1 WHERE NAME = ?', (name,) )
+    connection.commit()
+    connection.close()
 
+def delete_a_book(name):
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    cursor.execute(f'DELETE FROM BOOKS WHERE NAME = ?', (name,))
+    connection.commit()
+    connection.close()

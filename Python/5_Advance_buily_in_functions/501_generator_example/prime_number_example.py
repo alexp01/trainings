@@ -3,12 +3,13 @@
 
 def get_prime(bound: int) -> None:
     for x in range (2, bound):
-        prime_b = False
+        #prime_b = False
         for y in range (2, x):
             if x % y == 0:
-                prime_b = True
-        if not prime_b:
+                break
+        else:
             yield (x)
+        # the else in for is executed if the for executed without encountering any break and reach the end of the for limit
 
 prime_number = get_prime(20)
 print (prime_number)

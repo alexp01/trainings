@@ -21,6 +21,11 @@ print(next(my_gen)) # this prints 0 as we first return the number and then we in
 print(next(my_gen))
 print(next(my_gen))
 
+# An Iterator can not be used for ;
+# for i in my_gen , as this will give an error
+# or sum(my_gen) or list(my_gen)
+
+
 # Not all Iterators are generators, as your next method can return an element from a list, for example and iterate through its elements
 # Example:
 

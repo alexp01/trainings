@@ -43,6 +43,7 @@ third etc..."""
 - classmethod will be used when you do not want to use the self from the inherited class, and you prefer using you own internal self
 - you call a method from another method in the same class, by using self.method_to be called
 - Opening a file with r instead of a or w, will give a no file found error, if the file does not exists already. With a and W you create the file if it does not exist already.
+- All function return None by default
 
 #Variables:
 - List : [1, 'rr', 6]

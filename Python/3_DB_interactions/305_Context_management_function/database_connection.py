@@ -1,6 +1,6 @@
 import sqlite3
 
-Class DatabaseConnection:
+class DatabaseConnection:
 
     def __init__(self,db_name): # this will execute when the with line is executed
         self.db = db_name

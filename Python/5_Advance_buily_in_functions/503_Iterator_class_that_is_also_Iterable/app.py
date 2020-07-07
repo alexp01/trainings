@@ -26,3 +26,11 @@ for i in nr: # this will not print anything, as the class already runned once un
 # this will work as we call again the class and we reinitialize self.number = 1
 for i in Generate100numbers():
     print(i)
+
+my_numbers = [x for x in [1,2,3,4,5]]
+print (my_numbers) # the var contains a coppy of that list
+
+my_generator_numbers = (x for x in [1,2,3,4,5]) # This is not a tuples with list variables, but a generator
+# we can call this a : generator comprehension
+print (next(my_generator_numbers)) # that why i can do next(var)
+# this var does not have a copy of that list, but it can acces each value one by one

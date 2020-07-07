@@ -17,7 +17,7 @@ nr = Generate100numbers()
 
 print (sum(nr))
 
-# The bellow class is also an iterable even if it doesn ot have de __iter__dunder method
+# The bellow class is also an iterable even if it doesn ot have de __iter__ dunder method
 
 class Cars:
     def __init__(self):

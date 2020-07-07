@@ -44,6 +44,7 @@ third etc..."""
 - you call a method from another method in the same class, by using self.method_to be called
 - Opening a file with r instead of a or w, will give a no file found error, if the file does not exists already. With a and W you create the file if it does not exist already.
 - All function return None by default
+- break will stop the most inner loop, and continue, will ignore all that is after it, and continue with the next iteration of the loop
 
 #Variables:
 - List : [1, 'rr', 6]

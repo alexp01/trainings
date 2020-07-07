@@ -3,10 +3,10 @@
 
 class Generate100Numbers: # This is called a Iterator class, and its behaving identically as a Generator
     def __init__(self):
-        self.number = 0
+        self.number = 1
 
     def __next__(self):
-        if self.number < 100:
+        if self.number <= 4:
             current = self.number
             self.number += 1
             return current
@@ -16,15 +16,17 @@ class Generate100Numbers: # This is called a Iterator class, and its behaving id
 my_gen = Generate100Numbers()
 
 print(my_gen.number)
-print(next(my_gen)) # this prints 0 as we first return the number and then we increment it
+print(next(my_gen)) # this prints 1 as we first return the number and then we increment it
 # print (my_gen.__next__()) # this is identical to : print(next(my_gen))
+print(next(my_gen))
+print(next(my_gen))
+print(next(my_gen))
 print(next(my_gen))
 print(next(my_gen))
 
 # An Iterator can not be used for ;
 # for i in my_gen , as this will give an error
 # or sum(my_gen) or list(my_gen)
-
 
 # Not all Iterators are generators, as your next method can return an element from a list, for example and iterate through its elements
 # Example:

@@ -28,7 +28,7 @@ for i in Generate100numbers():
     print(i)
 
 my_numbers = [x for x in [1,2,3,4,5]]
-print (my_numbers) # the var contains a coppy of that list
+print (my_numbers) # the var contains a copy of that list
 
 my_generator_numbers = (x for x in [1,2,3,4,5]) # This is not a tuples with list variables, but a generator
 # we can call this a : generator comprehension

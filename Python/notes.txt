@@ -37,6 +37,7 @@ third etc..."""
 - when you import, you run the full content of that module and you have the met available
 - Do not change a list content while you iterate on it. Its a bad practice. Use list comprehension with condition to create another list.
 - 1 is seen as True and 0 as False.
+- Use list comprehension or gnerator comprehension rather than filter or map function. Those function should be used when you have colleges that use another language, as generator comprehension is more specific to python. # [f.lower() for f in friends]
 
 #Rules:
 - staticmethods should not be used. If used you needt o be sure that that object will not be inherited
@@ -45,6 +46,9 @@ third etc..."""
 - Opening a file with r instead of a or w, will give a no file found error, if the file does not exists already. With a and W you create the file if it does not exist already.
 - All function return None by default
 - break will stop the most inner loop, and continue, will ignore all that is after it, and continue with the next iteration of the loop
+- generators can be build with yield as a return or a class with __next__ for iterators and + __itr__ to be also iterable so you can do sum(), len(), for x in Iterator ...
+- All generators are iterators but not all iterators are generator, as you can have something tha twill iterate but will not generate numbers. For example you iterate thru a list of names.
+- An iterator is not iterable unless it has the __itr__ dunder method so it can iterate
 
 #Variables:
 - List : [1, 'rr', 6]
@@ -52,3 +56,21 @@ third etc..."""
 - Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To ass : Sets.add("Toto")
 - Dict : ({ "name" : "John", "age" : 34}, {....}).
 - SQLITE supports : text, integer, real, null and blob (images etc. )
+
+#Examples:
+
+@ Lambda :
+x = lambda a, b : a * b
+print(x(5, 6))
+
+@ Generator comprehension:
+friends = ['Rolf', 'Anna', 'Roul', 'John', 'Robin']
+(f.lower() for f in friends) # this is not a list comprehension but a generator comprehension as its using ( andn not [
+# so you can do next() to get : "rolf"_
+
+@ Stuff that are equal to False:
+0 , 0,0
+None
+False
+[], (), {}
+# to find out what is the boolean equivalent just do print (bool(variable))

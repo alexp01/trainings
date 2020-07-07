@@ -24,7 +24,7 @@ print (next(start_with_r_variable_2))
 
 # Also this is identical :
 
-start_with_r_variable_3 = (f for f in friends if f.startswith('R'))
+start_with_r_variable_3 = (f for f in friends if f.startswith('R')) # This is the simplest and ore recommended one
 
 start_with_r_variable_3 = filter(lambda x : x.startswith('R'), friends)
 print ('Output of third solution: ')

@@ -3,7 +3,6 @@
 
 def get_prime(bound: int) -> None:
     for x in range (2, bound):
-        #prime_b = False
         for y in range (2, x):
             if x % y == 0:
                 break

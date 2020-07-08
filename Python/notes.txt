@@ -51,10 +51,10 @@ third etc..."""
 - An iterator is not iterable unless it has the __itr__ dunder method so it can iterate
 
 #Variables:
-- List : [1, 'rr', 6]
+- List : [1, 'rr', 6]. To add : list.append or list + []
 - Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard")
-- Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To ass : Sets.add("Toto")
-- Dict : ({ "name" : "John", "age" : 34}, {....}).
+- Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To add : Sets.add("Toto")
+- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value
 - SQLITE supports : text, integer, real, null and blob (images etc. )
 
 #Examples:

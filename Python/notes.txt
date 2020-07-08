@@ -49,7 +49,8 @@ third etc..."""
 - generators can be build with yield as a return or a class with __next__ for iterators and + __itr__ to be also iterable so you can do sum(), len(), for x in Iterator ...
 - All generators are iterators but not all iterators are generator, as you can have something tha twill iterate but will not generate numbers. For example you iterate thru a list of names.
 - An iterator is not iterable unless it has the __itr__ dunder method so it can iterate
-
+- Use only non mutable default parameters values, as the mutable ones will just add on top of the initial content of that mutable value. More in # 604_Mutable_default_parameters_error
+- The default parameters of a functions are assigned when a function is defined not when its called.
 #Variables:
 - List : [1, 'rr', 6]. To add : list.append or list + []
 - Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard")

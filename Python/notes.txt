@@ -38,6 +38,8 @@ third etc..."""
 - Do not change a list content while you iterate on it. Its a bad practice. Use list comprehension with condition to create another list.
 - 1 is seen as True and 0 as False.
 - Use list comprehension or gnerator comprehension rather than filter or map function. Those function should be used when you have colleges that use another language, as generator comprehension is more specific to python. # [f.lower() for f in friends]
+- A good advice is to use the parameter names of a function when you call it with arguments . Example 605
+- Unpacking is a beter way to give arguments. For list of tuples [{a, 4}, {b, 9}] you give this as an argument with (*val) and for dict you use (**var). Example 605
 
 #Rules:
 - staticmethods should not be used. If used you needt o be sure that that object will not be inherited
@@ -50,12 +52,14 @@ third etc..."""
 - All generators are iterators but not all iterators are generator, as you can have something tha twill iterate but will not generate numbers. For example you iterate thru a list of names.
 - An iterator is not iterable unless it has the __itr__ dunder method so it can iterate
 - Use only non mutable default parameters values, as the mutable ones will just add on top of the initial content of that mutable value. More in # 604_Mutable_default_parameters_error
-- The default parameters of a functions are assigned when a function is defined not when its called.
+- The default parameters of a functions are assigned when a function is defined not when its called. Another advantage is that the order of the arguments is not important when you give names to the arguments also.
+
+
 #Variables:
 - List : [1, 'rr', 6]. To add : list.append or list + []
-- Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard")
+- Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard"). To access : tuple[0], tuple[2]
 - Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To add : Sets.add("Toto")
-- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value
+- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value. To access : dict['name'] ... to get the value John
 - SQLITE supports : text, integer, real, null and blob (images etc. )
 
 #Examples:

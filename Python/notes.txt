@@ -42,6 +42,7 @@ third etc..."""
 - Unpacking is a beter way to give arguments. For list of tuples [{a, 4}, {b, 9}] you give this as an argument with (*val) and for dict you use (**var). Example 605
 
 #Rules:
+- everythig in python is a Object. Like + or sum() etc...
 - staticmethods should not be used. If used you needt o be sure that that object will not be inherited
 - classmethod will be used when you do not want to use the self from the inherited class, and you prefer using you own internal self
 - you call a method from another method in the same class, by using self.method_to be called
@@ -59,7 +60,7 @@ third etc..."""
 - List : [1, 'rr', 6]. To add : list.append or list + []
 - Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard"). To access : tuple[0], tuple[2]
 - Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To add : Sets.add("Toto")
-- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value. To access : dict['name'] ... to get the value John
+- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value. To access : dict['name'] ... to get the value John. This is called a key : 'name'
 - SQLITE supports : text, integer, real, null and blob (images etc. )
 
 #Examples:

@@ -11,7 +11,7 @@ working_place_for_friend = [('Bob', 'IBM'), ('Bill', 'Apple')]
 # dict_of_friend_and_work_place = [{'Bob' : 'IBM'}, {'Bill': 'Apple'}]
 
 default_work_place = 'Freelancer'
-dict_of_friend_and_work_place = defaultdict(lambda : default_work_place) # we can not just give the sir as default parameter as the defaultdict needs a function as first argument
+dict_of_friend_and_work_place = defaultdict(lambda : default_work_place) # we can not just give the string as default parameter as the defaultdict needs a function as first argument
 
 for friend in working_place_for_friend:
     dict_of_friend_and_work_place[friend[0]] = friend[1]

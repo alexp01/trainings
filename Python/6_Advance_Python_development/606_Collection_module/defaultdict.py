@@ -33,6 +33,6 @@ print(dict_of_lived_places2['Tom']) # this not give an error, as it will have []
 # to get an error for Tom you have to do this:
 # dict_of_lived_places2.default_factory = None
 # print(dict_of_lived_places2['Tom'])
-# This Time you will get a keyerror as tha tkey does not exist in that list
+# This Time you will get a keyerror as that key does not exist in that list
 
 # dict_of_lived_places2.default_factory = int ... you can overwrite the defalt element to something else, like a int 

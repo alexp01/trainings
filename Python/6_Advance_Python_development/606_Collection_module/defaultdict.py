@@ -18,7 +18,7 @@ for line in places_lived:
 
 print(dict_of_lived_places)
 
-# To avoid assigning an empty list inside teh for you can do :
+# To avoid assigning an empty list inside the for you can do :
 
 dict_of_lived_places2 = defaultdict(list) # this returns [], an empty list
 for line in places_lived:

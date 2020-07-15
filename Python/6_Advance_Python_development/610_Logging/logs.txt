@@ -1,0 +1,8 @@
+15-07-2020 11:05:20 INFO     [app2.py:15]:This is a info type message
+15-07-2020 11:05:20 WARNING  [app2.py:16]:This is a warning
+15-07-2020 11:05:20 ERROR    [app2.py:31]:This is an error type message
+15-07-2020 11:05:20 CRITICAL [app2.py:32]:This is a critical message
+15-07-2020 11:05:35 INFO     [app2.py:15]:This is a info type message
+15-07-2020 11:05:35 WARNING  [app2.py:16]:This is a warning
+15-07-2020 11:05:35 ERROR    [app2.py:31]:This is an error type message
+15-07-2020 11:05:35 CRITICAL [app2.py:32]:This is a critical message

@@ -1,5 +1,6 @@
 
 # https://www.udemy.com/course/the-complete-python-course/learn/quiz/4425468#questions
+# https://regexr.com/
 
 import re
 """
@@ -11,6 +12,8 @@ Our definition of a secure filename is:
 
 def is_filename_safe(filename):
     regex = '[A-z0-9\-\(\)\_]+.(jpg|jpeg|png|gif)'
+    # training solution : regex = '^[a-zA-Z0-9][a-zA-Z0-9_()-]*(\.jpg|\.jpeg|\.png|\.gif)$'
+    # i find it longer and without sense
     return re.match(regex, filename) is not None
 
-print (is_filename_safe('asjhfda89YT()hfadf.png'))
+print (f"File validation : {is_filename_safe('asjhfda89YT()hfadf.png')}")

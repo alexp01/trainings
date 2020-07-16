@@ -25,7 +25,7 @@ def find_h1_tag(): # find function is checking for tags like <body>, <h1>
     return h1_tag.string # string is a property of h1_tag objects
 
 def find_all_li_tags():
-    list_items = simple_soup.find_all('li') # find is just giving 1 found element, the first
+    list_items = simple_soup.find_all('li') # find is just giving 1 found element, the first. Find all will give all of them
     return list_items # string is a property of h1_tag objects
 
 def find_paragraf_tag_with_subtitle():

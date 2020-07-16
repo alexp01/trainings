@@ -40,7 +40,7 @@ class Locators():
     title = 'article.product_pod h3 a'
     url = 'article.product_pod h3 a'
     price = 'article.product_pod p.price_color'
-    url = 'article.product_pod p.star-rating'
+    rating = 'article.product_pod p.star-rating'
 
 class verify_article():
     def __init__(self, page):

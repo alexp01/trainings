@@ -2,6 +2,7 @@ from pages.quotes_page import QuotePage
 from bs4 import BeautifulSoup
 import requests
 
+# https://www.udemy.com/course/the-complete-python-course/learn/lecture/9477898#questions
 # http://quotes.toscrape.com/
 
 page = requests.get('http://quotes.toscrape.com/').content # this will get the full content of the webpage in html

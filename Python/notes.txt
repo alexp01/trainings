@@ -54,8 +54,7 @@ third etc..."""
 - An iterator is not iterable unless it has the __itr__ dunder method so it can iterate
 - Use only non mutable default parameters values, as the mutable ones will just add on top of the initial content of that mutable value. More in # 604_Mutable_default_parameters_error
 - The default parameters of a functions are assigned when a function is defined not when its called. Another advantage is that the order of the arguments is not important when you give names to the arguments also.
-
-#Conventions:
+- When you debug you can have set the logging to DEBUG mode, but when users are using it you should raise the limit to Warning, Error and Critical.
 - project file imports are done after the import from outside the project sources
 
 #Variables:

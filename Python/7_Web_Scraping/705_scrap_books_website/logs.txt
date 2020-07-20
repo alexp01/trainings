@@ -1,0 +1,300 @@
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET / HTTP/1.1" 200 None
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET / HTTP/1.1" 200 None
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-2.html HTTP/1.1" 200 None
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-3.html HTTP/1.1" 200 None
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-4.html HTTP/1.1" 200 None
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:43 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-5.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-6.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-7.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-8.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-9.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-10.html HTTP/1.1" 200 None
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:44 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-11.html HTTP/1.1" 200 None
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-12.html HTTP/1.1" 200 None
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-13.html HTTP/1.1" 200 None
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-14.html HTTP/1.1" 200 None
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-15.html HTTP/1.1" 200 None
+20-07-2020 12:40:45 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-16.html HTTP/1.1" 200 None
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-17.html HTTP/1.1" 200 None
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-18.html HTTP/1.1" 200 None
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-19.html HTTP/1.1" 200 None
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-20.html HTTP/1.1" 200 None
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:46 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-21.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-22.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-23.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-24.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-25.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-26.html HTTP/1.1" 200 None
+20-07-2020 12:40:47 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-27.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-28.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-29.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-30.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-31.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-32.html HTTP/1.1" 200 None
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:48 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-33.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-34.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-35.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-36.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-37.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-38.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-39.html HTTP/1.1" 200 None
+20-07-2020 12:40:49 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-40.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-41.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-42.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-43.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-44.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-45.html HTTP/1.1" 200 None
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:50 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-46.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-47.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-48.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-49.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-50.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 INFO     [app.py:36]:We got all pages url. tags
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET / HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:51 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-3.html HTTP/1.1" 200 None
+20-07-2020 12:40:51 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:51 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:51 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-4.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-5.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-6.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-7.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-8.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-9.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-10.html HTTP/1.1" 200 None
+20-07-2020 12:40:52 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:52 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:52 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-11.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-12.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-13.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-14.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-15.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-16.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-17.html HTTP/1.1" 200 None
+20-07-2020 12:40:53 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:53 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:53 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-18.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-19.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-20.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-21.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-22.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-23.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-24.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-25.html HTTP/1.1" 200 None
+20-07-2020 12:40:54 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:54 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:54 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-26.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-27.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-28.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-29.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-30.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-31.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-32.html HTTP/1.1" 200 None
+20-07-2020 12:40:55 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:55 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:55 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-33.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-34.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-35.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-36.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-37.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-38.html HTTP/1.1" 200 None
+20-07-2020 12:40:56 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:56 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:56 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-39.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-40.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-41.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-42.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-43.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-44.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-45.html HTTP/1.1" 200 None
+20-07-2020 12:40:57 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:57 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:57 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-46.html HTTP/1.1" 200 None
+20-07-2020 12:40:58 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:58 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-47.html HTTP/1.1" 200 None
+20-07-2020 12:40:58 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:58 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-48.html HTTP/1.1" 200 None
+20-07-2020 12:40:58 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:58 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-49.html HTTP/1.1" 200 None
+20-07-2020 12:40:58 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:58 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:226]:Starting new HTTP connection (1): books.toscrape.com:80
+20-07-2020 12:40:58 DEBUG    [connectionpool.py:433]:http://books.toscrape.com:80 "GET /catalogue/page-50.html HTTP/1.1" 200 None
+20-07-2020 12:40:58 DEBUG    [books_page.py:12]:Individual HTML page is parsed
+20-07-2020 12:40:58 DEBUG    [books_page.py:18]:Getting book elements from an book tag
+20-07-2020 12:40:58 INFO     [app.py:58]:Creating BookPage objects from each book in all pages

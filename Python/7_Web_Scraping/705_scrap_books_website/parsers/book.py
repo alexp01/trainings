@@ -1,4 +1,7 @@
 from locators.books_locator import BooksLocators
+import  logging
+
+logger = logging.getLogger('scraping.book')
 
 class BookParser:
     """
@@ -23,7 +26,9 @@ class BookParser:
     @property
     def name(self):
         locator = BooksLocators.NAME
-        return self.parent.select_one(locator).attrs['title']
+        book_name = self.parent.select_one(locator).attrs['title']
+        logger.debug(f"Book name : {book_name}")
+        return book_name
 
     @property
     def price(self):

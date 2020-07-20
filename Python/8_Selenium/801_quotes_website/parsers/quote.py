@@ -1,9 +1,6 @@
 from locators.quotes_locator import QuotesLocators
 
-class QuoteParser:
-    """
-    will receive a tag for a quote and return tags for elements (content,author and tags) of each quote
-    """
+class QuoteParser
     def __init__(self, parent):
         self.parent = parent
 

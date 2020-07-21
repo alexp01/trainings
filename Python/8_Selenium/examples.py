@@ -44,6 +44,50 @@ def get_by_partial_text():
     elem = chrome.find_element_by_partial_link_text("YouTu")
     elem.click()
 
+# 5. Locate Element by XPath
+def get_by_xpath():
+    chrome = webdriver.Chrome(executable_path="D:\Alex\chromedriver_win32\chromedriver")
+    chrome.get('https://www.bing.com/')
+    chrome.maximize_window()
+    inputElement = chrome.find_element_by_xpath("//form[@class='sb_form hassbi']/input[@id='sb_form_q']")
+    inputElement.send_keys("Toto")
+    inputElement.submit()
+    elem = chrome.find_element_by_xpath("//span[@class='bm_details_overlay']/a[1]")
+    elem.click()
+
+#6. Locate Element by CSS Selector
+def get_by_css():
+    chrome = webdriver.Chrome(executable_path="D:\Alex\chromedriver_win32\chromedriver")
+    chrome.get('https://www.bing.com/')
+    chrome.maximize_window()
+    inputElement = chrome.find_element_by_css_selector('form input.sb_form_q')
+    inputElement.send_keys("Toto")
+    inputElement.submit()
+    elem = chrome.find_element_by_css_selector('div.mc_vtvc_title')
+    elem.click()
+
+# 7. Locate Element by Tagname
+def get_by_tag_name():
+    chrome = webdriver.Chrome(executable_path="D:\Alex\chromedriver_win32\chromedriver")
+    chrome.get('https://www.bing.com/')
+    chrome.maximize_window()
+    inputElement = chrome.find_element_by_tag_name('input')
+    inputElement.send_keys("Toto")
+    inputElement.submit()
+    elem = chrome.find_element_by_tag_name('h1')
+    elem.click()
+
+# 8. Locate Element by Classname
+def get_by_class_name():
+    chrome = webdriver.Chrome(executable_path="D:\Alex\chromedriver_win32\chromedriver")
+    chrome.get('https://www.bing.com/')
+    chrome.maximize_window()
+    inputElement = chrome.find_element_by_class_name('sb_form_q')
+    inputElement.send_keys("Toto")
+    inputElement.submit()
+    elem = chrome.find_element_by_class_name('mc_vtvc_htc')
+    elem.click()
+
 print("""
 1. Locate Element by Name
 2. Locate Element by ID
@@ -63,5 +107,11 @@ elif option == '3':
     get_by_text()
 elif option == '4':
     get_by_partial_text()
-
-
+elif option == '5':
+    get_by_xpath()
+elif option == '6':
+    get_by_css()
+elif option == '7':
+    get_by_tag_name()
+elif option == '8':
+    get_by_class_name()

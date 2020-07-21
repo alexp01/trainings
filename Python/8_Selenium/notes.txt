@@ -1,0 +1,32 @@
+<html>
+<body>
+<form id="signUpForm">
+<input name="emailId/mobileNo" type="text" />
+<input name="password" type="password" />
+<input name="continue" type="submit" value="SignUp" />
+<input name="continue" type="button" value="Clear" />
+</form>
+</body>
+<html>
+
+
+Absolute path: not recomended
+form_element = driver.find_element_by_xpath("/html/body/form[1]")
+
+Relative path:
+form_element = driver.find_element_by_xpath("//form[1]")
+# it will match the first form element
+
+form_element = driver.find_element_by_xpath("//form[@id='signUpForm']")
+# gets the first element of name form with an id= ..... variable inside
+
+email_input = driver.find_element_by_xpath("//form[input/@name='emailId/mobileNo']")
+# gets the first form element with a input child that has also a variable name= ....
+
+email_input = driver.find_element_by_xpath("//form[@id='loginForm']/input[1]")
+# gets the first child element input with a parentform element with variable id = ...
+
+email_input= driver.find_element_by_xpath("//input[@name='emailId/mobileNo']")
+# it goes to the first input elemnt with variable name=... without checking its parents
+
+# you can identify an element by putting several variables , like : //input[@name='emailId/mobileNo'][@type='text']

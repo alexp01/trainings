@@ -26,6 +26,10 @@ Constructor : is the method from a class that will be executed when an object is
 List comprehencion : x =0, y = [x+1 for x in range[0,9]]. Y will be a list : [0, 1, 2, ..., 9]
 Module : is the file executed when calling it by import
 Package : folder that contains libraries
+Cores : procesor cores
+Threads : a list of waiting element ready to be sent to be processed by the cores
+Process : its the thing that will execute 1 or more threads element in 1 or more cores, and also that makes sures the threads have all the necessary resources.
+Time slicing : when you stop a thread from a core, and you replace it with another thread, the first one will stop, and its status will be stored, until it will be placed again in a thread so it can continue
 
 # Tricks:
 - "class.__name__" will give you the class name.
@@ -57,6 +61,7 @@ third etc..."""
 - When you debug you can have set the logging to DEBUG mode, but when users are using it you should raise the limit to Warning, Error and Critical.
 - Project file imports are done after the import from outside the project sources
 - Selenium is better than webparsing, as if the page contains javaScrip, this will not be found into the html as it will change constantly.
+- Python is not asynchronous. There is always something happening after another thing.
 
 #Variables:
 - List : [1, 'rr', 6]. To add : list.append or list + []

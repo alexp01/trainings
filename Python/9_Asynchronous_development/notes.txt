@@ -1,0 +1,10 @@
+- python is not build for asynchronous taks
+- you can run 1 process, that will handle 1 threads in 1 core. And this will use a GIL : Global identifier lock.
+- each thread needs this GIL to be run
+NOT POSSIBLE:
+- so running multiple threads in the same process in the same core is not possible because of this GIL
+POSSIBLE:
+- we can have multiple python processes with their own GIL, that will run their own threads, but its hard to have interactions in between threads.
+
+RUlES:
+- threads are usefull in python only if some of them are not doing things. Like the case when you wait for user inputs. This has waiting periods because you wait the user to enter things.

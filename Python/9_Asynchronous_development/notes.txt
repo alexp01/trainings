@@ -7,4 +7,6 @@ POSSIBLE:
 - we can have multiple python processes with their own GIL, that will run their own threads, but its hard to have interactions in between threads.
 
 RUlES:
-- threads are usefull in python only if some of them are not doing things. Like the case when you wait for user inputs. This has waiting periods because you wait the user to enter things.
+- threads are usefull in python only if some of them are not doing complex things. Like the case when you wait for user inputs. This has waiting periods because you wait the user to enter things.
+- you use multiple processes to run individual threads in individual cores when you have several complex calculations, and you want all of them to run at the same time.
+- but if you have at least 1 task that has waiting parts, like an user input it is recomanded to used multi threads and not multi proceeses, and different processes can not share info, and it will have dificulties in reading the user input from the console.

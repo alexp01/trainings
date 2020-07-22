@@ -16,7 +16,7 @@ def ask_user(): # its duration depends on how fast te user value is inserted, so
 def complex_calculation(): # it takes 8 secs
     start = time.time()
     print('Starting complex_calculation function')
-    complex_calc = [x**2 for x in range(20000000)]
+    complex_calc = [x**2 for x in range(30000000)]
     print(f'The complex_calculation function took : {time.time() - start}')
 
 

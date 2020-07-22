@@ -62,6 +62,7 @@ third etc..."""
 - Project file imports are done after the import from outside the project sources
 - Selenium is better than webparsing, as if the page contains javaScrip, this will not be found into the html as it will change constantly.
 - Python is not asynchronous. There is always something happening after another thing.
+- If you want that to force the fact that a variable that you use in your function is the global one of the file, you put global in front of that variable inside the function. (global var1, where var1 is the global one). But be carefull as the global var can now be updated inside the function.
 
 #Variables:
 - List : [1, 'rr', 6]. To add : list.append or list + []

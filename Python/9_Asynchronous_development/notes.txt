@@ -1,12 +1,20 @@
-- python is not build for asynchronous taks
-- you can run 1 process, that will handle 1 threads in 1 core. And this will use a GIL : Global identifier lock.
+DETAILS:
+- python is not build for asynchronous tasks
+- you can run 1 process, that will handle 1 threads in 1 core. Each Thread will use a GIL : Global identifier lock.
 - each thread needs this GIL to be run
+
+
 NOT POSSIBLE:
 - so running multiple threads in the same process in the same core is not possible because of this GIL
 POSSIBLE:
-- we can have multiple python processes with their own GIL, that will run their own threads, but its hard to have interactions in between threads.
+- we can have multiple python processes with their own threads and own GIL, but its hard to have interactions in between threads. This is could be an issue.
 
 RUlES:
 - threads are usefull in python only if some of them are not doing complex things. Like the case when you wait for user inputs. This has waiting periods because you wait the user to enter things.
 - you use multiple processes to run individual threads in individual cores when you have several complex calculations, and you want all of them to run at the same time.
 - but if you have at least 1 task that has waiting parts, like an user input it is recomanded to used multi threads and not multi proceeses, and different processes can not share info, and it will have dificulties in reading the user input from the console.
+
+
+CONCLUSIONS:
+- Python can not do asynchronous task execution, to run several things at the same time in paralel
+- It can do multi threads, but this is a fake asynchronous task execution way, as it does run things one after the others, while stoping some to give priority to others.

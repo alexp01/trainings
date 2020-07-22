@@ -18,3 +18,5 @@ RUlES:
 CONCLUSIONS:
 - Python can not do asynchronous task execution, to run several things at the same time in paralel
 - It can do multi threads, but this is a fake asynchronous task execution way, as it does run things one after the others, while stoping some to give priority to others.
+
+- Generators can simulate threads behaviour, and they are faster and cheaper in resources

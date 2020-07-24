@@ -16,7 +16,7 @@ def get_next_friend():
     while count < len(list_of_frinds):
         yield  list_of_frinds[count]
         count += 1
-# Deque solution is simpler indeed
+# Training solution is simpler indeed
 
 def print_next_friend(g): # the parameter is a genetaror with friends names
     while True: # this will not run for ever as the yield will stop it until the function is called again

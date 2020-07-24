@@ -11,7 +11,7 @@ def friend_upper():
         greeting = yield
         print(f'{greeting} : {friend}')
 
-def great(g):
+def greet(g):
     g.send(None) # we also activate the friend_upper function, and this will stop just before executing yield
     # This will only execute 1, as for every yield value sent by using greeter.send(xxx), you run another loop of the while. You do not run the function entirely
     while True:
@@ -23,7 +23,7 @@ def great(g):
 #    yield from g
 # But its a bid complex as syntax and does not provide a lot of info about what it does
 
-greeter = great(friend_upper())
+greeter = greet(friend_upper())
 greeter.send(None) # this will stop the greet fct right before the yield
 greeter.send('Helo') # this will rerun the greet fct from the yield position, giving it the value Hello, that will be passed to greeting and then pushed to friend_upper fct for its yield also
 print ('Now you can execute another functionality as the others are stopped')

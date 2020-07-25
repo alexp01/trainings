@@ -2,10 +2,6 @@
 # https://www.udemy.com/course/the-complete-python-course/learn/lecture/9477964#questions
 # http://books.toscrape.com/
 
-import  logging
-
-logger = logging.getLogger('scraping.menu')
-
 from app import books
 # this will run the app file until the books variable is used, including the var value atribution
 
@@ -31,14 +27,12 @@ def print_best_5_books():
     for book in best_books[-5:]: # this is a way to get the last elements as the sorting is done ascending
         # another way to order descending is : best_books = sorted(books, key=lambda x: x.star * -1) : this will sort ascending as it starts from -6 to -1. But the end results are in decending order by star rating.
         print(book)
-    logger.info('print cheepest 5 books')
 
 def print_5_stars_books():
     best_books = sorted(books, key=lambda x: x.star)
     for book in best_books:
         if book.star == 5:
             print(book)
-    logger.info('print 5 stars books')
 
 def print_cheepest_5_books():
     cheep_books = sorted(books, key=lambda x: x.price)
@@ -69,4 +63,3 @@ def show_menu():
         get_user_option = input(MENU)
 
 show_menu()
-logger.info('Program is finished')

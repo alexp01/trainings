@@ -16,6 +16,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger('scraping')
 
+
+# The simplest way of getting all the pages content
+# To make it better you can just get the total number of page results, and replave the range(1,50) limit
+books = []
+
+for x in range(1, 50):
+    page_content = requests.get(MAIN_PAGE + 'catalogue/page-' + str(x) + '.html').content
+    page = BookPage(page_content)
+    books_in_1_page = page.books
+    for book in books_in_1_page:
+        books.append(book)
+# Instead of all the code that is bellow, you can just run this as you know you have only 50 pagesfor x in range(1, 50):
+
+
+
 # in the training they just do a for in range of 50, as there are 50 pages. They also read teh 50 from html. Its a faster and shorter solution.
 # my implementation is come complex. but it covers the case when the URL of different pages will change.
 

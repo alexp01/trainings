@@ -7,7 +7,7 @@ import time
 
 async def fetch_page(url):
     page_start = time.time()
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession() as session: # ClientSession has a pool of connection ready to just be lunched
         async with session.get(url) as response:
             print(f'Page took {time.time() - page_start}')
             return  response.status

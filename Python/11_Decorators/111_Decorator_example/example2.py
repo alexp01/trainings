@@ -1,5 +1,6 @@
 
 # https://www.udemy.com/course/the-complete-python-course/learn/lecture/9490860#overview
+# a better solution for the issues that are documented bellow can be seed in example3.py
 
 users = {'name' : 'Pepe', 'right': 'admin'}
 
@@ -27,9 +28,9 @@ my_secure_function = check_user_permission(my_function)
 print (my_secure_function())
 
 print(my_function.__name__) # will print secure func
-print(my_function.__name__) # will print secure func also
+print(another.__name__) # will print secure func also
 # this might be a problem both of this function point to the same funct inside the decorator
-# even if they do completly different things
+# even if they do completely different things
 
 print(my_function.__doc__) # this will not print nothing, as it hidden and will be replaced by secure_func
 print(check_user_permission.__doc__) # this will print the doc comments from the decorator function

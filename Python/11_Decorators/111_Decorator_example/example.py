@@ -11,6 +11,7 @@ users = {'name' : 'Pepe', 'right': 'admin'}
 
 #the new way of writing decorators:
 def check_user_permission(func): # this is a Decorator#    def secure_func():
+    # secure_func is like a wrapper on top of our my_function function, that contains some extra funcionalities
     def secure_func():
         if users.get('right') == 'admin':
          return func() # we now return the return of my_function

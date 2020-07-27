@@ -1,3 +1,6 @@
+
+# This not finish this example as the aiohttp and asyncoi import was causing problems.
+
 import aiohttp
 import asyncio
 import async_timeout
@@ -33,7 +36,7 @@ async def get_multiple_pages(loop, *urls):
 
 urls = [f"http://books.toscrape.com/catalogue/page-{page_num+1}.html" for page_num in range(1,50)]
 start = time.time()
-
+pages = loop.run_un
 
 for x in range(1, 50):
     page_content = requests.get(MAIN_PAGE + 'catalogue/page-' + str(x) + '.html').content

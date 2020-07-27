@@ -44,6 +44,7 @@ third etc..."""
 - Use list comprehension or gnerator comprehension rather than filter or map function. Those function should be used when you have colleges that use another language, as generator comprehension is more specific to python. # [f.lower() for f in friends]
 - A good advice is to use the parameter names of a function when you call it with arguments . Example 605
 - Unpacking is a beter way to give arguments. For list of tuples [{a, 4}, {b, 9}] you give this as an argument with (*val) and for dict you use (**var). Example 605
+- Cache-ing a function is good when you call severla times a function that will give the same answer for up to 1 hour. Example: 10_Rest/102_Chache_ing_a_function
 
 #Rules:
 - everythig in python is a Object. Like + or sum() etc...

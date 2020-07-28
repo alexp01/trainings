@@ -99,6 +99,8 @@ sum_all(1,2,3)
 #OR:
 sum_all(*x)
 
+# OR def sum_all(*args): # args will take any number of positional arguments
+
 #Keyword:
 x = {'a': 1, 'b': 3, 'c': 6}
 def sum_all(a,b,c):
@@ -107,3 +109,4 @@ print(sum_all(b = 2, c = 1, a = 4))
 #OR:
 print(sum_all(**x))
 
+# # OR def sum_all(*kwargs): # args will take any number of keyword name arguments

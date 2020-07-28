@@ -69,7 +69,7 @@ third etc..."""
 - List : [1, 'rr', 6]. To add : list.append or list + []
 - Tuples : ("John", "Rich", "Smith"). Random values always. To add : tuples = tuples + ("Stuard"). To access : tuple[0], tuple[2]
 - Sets : {"John", "Rich", "Bob"}. Multiple comparison functions. To add : Sets.add("Toto")
-- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value. To access : dict['name'] ... to get the value John. This is called a key : 'name'
+- Dict : ({ "name" : "John", "age" : 34}, {....}). To add : dict['new element'] = value. To access : dict['name'] ... to get the value John. This is called a key : 'name'. ot dict.get('name')
 - SQLITE supports : text, integer, real, null and blob (images etc. )
 
 #Examples:
@@ -89,3 +89,21 @@ None
 False
 [], (), {}
 # to find out what is the boolean equivalent just do print (bool(variable))
+
+@ Positional/keyword arguments and argument unpacking
+#Positional:
+x = (1,2,3)
+def sum_all(a,b,c):
+    return a+b+c
+sum_all(1,2,3)
+#OR:
+sum_all(*x)
+
+#Keyword:
+x = {'a': 1, 'b': 3, 'c': 6}
+def sum_all(a,b,c):
+    return a+b+c
+print(sum_all(b = 2, c = 1, a = 4))
+#OR:
+print(sum_all(**x))
+

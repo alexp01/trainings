@@ -7,7 +7,7 @@ class PrinterError(RuntimeError):
 class Printer:
     def __init__(self, pages_per_s: float, capacity: int):
         self.pages_per_s = pages_per_s
-        self._capacity = capacity
+        self._capacity = capacity # _capacity is a standard to say to not modify this self cariable
 
     def print(self, pages):
         if pages > self._capacity:

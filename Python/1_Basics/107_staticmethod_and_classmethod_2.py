@@ -24,7 +24,7 @@ class FixedFloat:
 
     @classmethod
     def from_sum(cls,value1, value2):
-        return cls(value1+value2)
+        return cls(value1+value2) # it can be replaced by FixedFloat(value1+value2), as cls represends FixedFloat class
 
 class Euro(FixedFloat):
     def __init__(self, value):
@@ -33,6 +33,9 @@ class Euro(FixedFloat):
 
     def __repr__(self):
         return (f'Euro {self.value:.3f} {self.symbol}')
+
+new1 = FixedFloat
+print (new1.from_sum(2,4))
 
 new_number = FixedFloat.from_sum(20.554, 0.745643)
 print(new_number)

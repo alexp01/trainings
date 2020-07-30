@@ -30,6 +30,8 @@ Cores : procesor cores
 Threads : a list of waiting element ready to be sent to be processed by the cores
 Process : its the thing that will execute 1 or more threads element in 1 or more cores, and also that makes sures the threads have all the necessary resources.
 Time slicing : when you stop a thread from a core, and you replace it with another thread, the first one will stop, and its status will be stored, until it will be placed again in a thread so it can continue
+Interface: is a super class( with import ABSMeta) that defines what the subclasses should have as methods. It should not be used directly, but it can contain also common subclasses logic if required. Example: 13_Advance_OOP/131_multiple_inheritance
+
 
 # Tricks:
 - "class.__name__" will give you the class name.

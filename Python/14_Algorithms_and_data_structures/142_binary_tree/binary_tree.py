@@ -21,6 +21,17 @@ class Binary_tree:
                 else:
                     current_node.right = new_node
                     break
+    def search(self, value: int):
+        current_node = self.head
+        while current_node:
+            if value == current_node.value:
+                return (f'Found {current_node.value}')
+            if value > current_node.value:
+                current_node = current_node.right
+            else:
+                current_node = current_node.left
+        raise LookupError('We oculd not finf this node')
+
 
     def inorder(self):
         self._inorder_recursive(self.head)

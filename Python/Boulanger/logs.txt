@@ -1,0 +1,5 @@
+10-02-2023 15:48:04 INFO     [autotest.py:30]: ### STEP ### : Search for a product with "LG" and "TV" search inputs
+10-02-2023 15:48:06 INFO     [autotest.py:37]: ### STEP ### : Search for a product with "LG" and "TV" search inputs
+10-02-2023 15:48:06 INFO     [autotest.py:41]: The current URL https://www.boulanger.com/c/televiseur/brand~lg#tr=LG+TV has search inputs : search_type:"TV" and search_brand:"LG"
+10-02-2023 15:48:06 INFO     [autotest.py:44]: ### STEP ### : Verify that the search results are TV products made by LG
+10-02-2023 15:48:06 INFO     [autotest.py:45]: Comparing search result to the initial search criteria

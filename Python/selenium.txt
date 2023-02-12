@@ -1,0 +1,29 @@
+
+### HTML:
+- Each element has a Starting tag and a ending tag, several atributes and atributes values and a text.
+...<iframe atribute1="atribute-value1" class="class-valur1 class-value2" atribute2="atribute-value1" Some-text </iframe>
+- Some elements have a list of other elements assigned.
+
+### CSS search:
+- by class value with '.value1.value2'
+- by Tag and a atribute+atribute_value 'iframe[id="privacy-iframe"]'   (...<iframe id="privacy-iframe" class=".....)
+
+
+1. What to do when you have a several frames and an element is not found by default.
+- You need to switch frame: browser.switch_to.frame(browser.find_elements_by_css_selector('.iframe')   for (...<iframe id="privacy-iframe" class=".....)
+- Once you do that you are inside the frame and you can find your elelent.
+- Once you finish with that frame you have to go outside : browser.switch_to.default_content()
+- This solution was not that stable.
+Exemple:
+#Closing the privacy popup by chanching frame in order to have access to the close button.
+browser.switch_to.frame(browser.find_element_by_css_selector('iframe[id="privacy-iframe"]'))
+privicy_popup = browser.find_element_by_css_selector('.modal-content')
+if privicy_popup:
+    close_button = browser.find_element_by_css_selector('.close')
+    close_button.click()
+    browser.switch_to.default_content()
+
+
+2. What to do when you can not find an element and you have a Shadow-root block.
+- You use this command to find he shadow-root : browser.execute_script('''return document.querySelector('bl-search#search__component').shadowRoot.querySelector('.search-input')''').send_keys("username")
+- where "bl-search" is a tag and "search__component" an atribute. In the query input you put you css locator.

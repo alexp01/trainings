@@ -5,10 +5,24 @@
 - Some elements have a list of other elements assigned.
 
 ### CSS search:
-- by class value with '.value1.value2'
-- by Tag and a atribute+atribute_value 'iframe[id="privacy-iframe"]'   (...<iframe id="privacy-iframe" class=".....)
+1. by class value with '.value1.value2'
+2. by Tag and a atribute+atribute_value 'iframe[id="privacy-iframe"]'   (...<iframe id="privacy-iframe" class=".....)
+3. Its using the class name of our element, its parent atribute "color" and then from another parent, several levels up with the tag "bw-search-widget"
+        self.__browser.find_element(By.CSS_SELECTOR, 'bw-search-widget [color] .mat-button-wrapper').click()
+
+Or "bwc-form-input-container [data-test="bwsfe-widget__origin-input"] .mat-input-element"
+here i also give the parnet atribute and value to have an unique identifier.
+
+Or just "[data-test="bwsfe-widget__origin-input"] .mat-input-element"
+The parent with artibute and value and then the child class value.
+4. By using the child class name and its parent class name:
+"".ng-tns-c175-14 .mat-input-element"
+where "".ng-tns-c175-14" is the class from parent and "".mat-input-element" from child
 
 
+
+
+### Other things:
 1. What to do when you have a several frames and an element is not found by default.
 - You need to switch frame: browser.switch_to.frame(browser.find_elements_by_css_selector('.iframe')   for (...<iframe id="privacy-iframe" class=".....)
 - Once you do that you are inside the frame and you can find your elelent.
@@ -27,3 +41,24 @@ if privicy_popup:
 2. What to do when you can not find an element and you have a Shadow-root block.
 - You use this command to find he shadow-root : browser.execute_script('''return document.querySelector('bl-search#search__component').shadowRoot.querySelector('.search-input')''').send_keys("username")
 - where "bl-search" is a tag and "search__component" an atribute. In the query input you put you css locator.
+
+3. AttributeError: 'Name_of_my_class' object has no attribute '__browser'
+When you call in the console a atribute of a class, like self.__browser, you will get the above error.
+The solution is to add "_Name_of_my_class" between "self." and "__browser" : "self._Name_of_my_class__browser".
+This is only a console error and will not happen when the code is executed normally.
+
+4. Waits. The best way is Explicit wait: loop and check if the element is there before going for it.
+https://selenium-python.readthedocs.io/waits.html#:~:text=Selenium%20Webdriver%20provides%20two%20types,trying%20to%20locate%20an%20element.
+
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+....
+
+try:
+   element = WebDriverWait(self.__browser, 1).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".bw-cookie-banner__first-button")))
+finally:
+   pass
+
+
+

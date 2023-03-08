@@ -19,7 +19,6 @@ class Driver():
         else:
             option.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 1})
 
-
-        chrome = webdriver.Chrome(chrome_options=option, executable_path="C:\chromedriver_win32\chromedriver")
+        chrome = webdriver.Chrome(chrome_options=option, executable_path="C:\webdriver\chromedriver")
         chrome.get(self.__page)
         return chrome

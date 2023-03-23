@@ -1,3 +1,15 @@
 {
-    "title": "BMW Pencil"
+    "title": "new type of iPhone",
+    "description": "An apple mobile which is nothing like apple",
+    "price": 999,
+    "discountPercentage": 11.96,
+    "rating": 4.69,
+    "stock": 94,
+    "brand": "Apple",
+    "category": "smartphones",
+    "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+    "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg"
+            ]
 }

@@ -1,3 +1,5 @@
 https://jsonplaceholder.typicode.com/
 
 https://dummy.restapiexample.com/  # The endpoint are not always working
+
+https://dummyjson.com/docs

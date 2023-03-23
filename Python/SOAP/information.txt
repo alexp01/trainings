@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<data>
+    <country name="Liechtenstein" test_atribute1 = "test01">
+        <rank>1</rank>
+        <year>2008</year>
+        <gdppc>141100</gdppc>
+        <neighbor name="Austria" direction="E">This is a test text inside a tag</neighbor>
+        <neighbor name="Switzerland" direction="W"/>
+    </country>
+    <country name="Singapore">
+        <rank>4</rank>
+        <year>2011</year>
+        <gdppc>59900</gdppc>
+        <neighbor name="Malaysia" direction="N"/>
+    </country>
+    <country name="Panama" unique_atribute = "test02">
+        <rank>68</rank>
+        <year>2011</year>
+        <gdppc>13600</gdppc>
+        <neighbor name="Costa Rica" direction="W"/>
+        <neighbor name="Colombia" direction="E"/>
+    </country>
+</data>
+
+- the 'data' is the ROOT
+- it has dictionaries inside each with the Tag 'country'
+- the Tag 'country' has 1 atribute called 'name'. A Tag can have more than 1 atributes.
+- The Tag 'country' has several children each with its Tag and value.
+- In a Tag you can have just a text like for Tag "rank", "year", "gdppc". Or some atributes of a mixt of atributes and a text.
+- The first child of ROOT, the TAG "country", has a child with Tag "neighbor" where there are 2 atributes and a Text.
+
+Parsing:
+1. it can be done with ElementTree library like in exemple02.
+https://docs.python.org/3/library/xml.etree.elementtree.html
+It even has a way to use Xpath to fetch the elements inside xml.
+2. it can be done with BeautifulSoup library like in exemple03.
+The ElementTree way looks simpler.
+

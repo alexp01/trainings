@@ -1,0 +1,3 @@
+11-03-2023 09:42:41 INFO     [Scenario1.py:32]:Close the Cookie popup that will be visible at every page start
+11-03-2023 09:42:43 INFO     [Scenario1.py:36]:Expand the Search area
+11-03-2023 09:42:45 INFO     [Scenario1.py:42]:Add Start date = (today + start_date) days and Return_date = (today + start_date + return_date) days

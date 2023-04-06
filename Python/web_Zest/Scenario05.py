@@ -1,6 +1,8 @@
 ''' Scope
 1. Open from menu "E-boutique"/"Accès E-boutique".
-2. Verify that all category are accessible. (dropdown content can be visible or hidden)
+2. Login.
+3. Verify that we cand add a new card to an account.
+4. Verify the errors for card form.
 '''
 
 from pages.common.main import Driver

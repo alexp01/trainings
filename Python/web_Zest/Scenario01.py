@@ -4,7 +4,7 @@
 3. Select a value in each DropDown and then clean it.
 '''
 
-from Python.web_Zest.pages.common.main import Driver
+from pages.common.main import Driver
 from pages.main_page import Main_page
 from pages.telecharger_les_horaires import Telecharger_les_horaires
 from conf.conf_file import *
@@ -27,7 +27,7 @@ do_tlh = Telecharger_les_horaires(browser)
 
 do_mp.verify_url(url["Télécharger les horaires"])
 
-do_tlh.refuse_cockies
+#do_tlh.refuse_cockies
 
 # Check that all options are in Lignes dropdown
 ligne_index_not_found = do_tlh.verify_lignes(lignes)

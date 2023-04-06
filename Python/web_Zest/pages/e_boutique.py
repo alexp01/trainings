@@ -112,7 +112,7 @@ class E_boutique():
                 raise MyException(f'Expecting checkbox text : "{tickets_categories[index].lower()}", but we found "{element.text.lower()}". ')
 
     def apply_filter(self, filter_value):
-        elements_parent = WebDriverWait(self.__browser, 2).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '[type="checkbox"]')))
+        elements_parent = WebDriverWait(self.__browser, 5).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '[type="checkbox"]')))
         for element in elements_parent:
             previous_sibling = self.__browser.execute_script("""return arguments[0].nextElementSibling""",element)
             if previous_sibling.text.lower() == filter_value.lower():
@@ -212,9 +212,12 @@ class E_boutique():
                 raise MyException(f"For category: '{category_name}', we were expecting the ticket type : '{name}', but we found '{title_element[0].text}'. ")
             if price != title_element[1].text:
                 raise MyException(f'For category: "{category_name}", we were expecting the price : "{price}", but we found "{title_element[1].text}". ')
+            logging.info(f'For category: "{category_name}", ticket type : "{title_element[0].text}", wa have the price:  "{title_element[1].text}"')
+        logging.info('#End of STEP.')
 
     # Checks if all categories can be extended and hidden. With check.
     def verify_category_content_accessibility(self, ticket_category):
+        logging.info(f'#Step : Checks if all categories can be extended and hidden. With check.".')
         for category in ticket_category:
             self.expand_category(category)
             if self.is_category_hidden(category):
@@ -224,16 +227,23 @@ class E_boutique():
             if self.is_category_expanded(category):
                 raise MyException(f'Category: "{category}" should be hidden but its visible". ')
             logging.info(f'The category "{category}" is now hidden.')
+        logging.info('#End of login STEP.')
 
+    # Verify the email of the account.
     def check_email(self, email):
+        logging.info('#Step : Verify the email of the account.')
         elements_category = WebDriverWait(self.__browser, 2).until(EC.presence_of_element_located((By.CSS_SELECTOR, '[name="staleemail"]')))
         email_text = elements_category.get_attribute('value')
         if not email_text:
             raise MyException(f'Could not locate the email text. ')
         elif email_text != email:
             raise MyException(f'The displayed email : "{email_text}" is not the expected one : "{email}". ')
+        logging.info(f'Found email : {email_text}.')
+        logging.info('#End of login STEP.')
 
+    # Verify if the credit card fields are editable and if the card is added
     def add_card(self, card):
+        logging.info('#Step : Verify if the credit card fields are editable and if the card is added.')
         months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
         add_new_card_element = WebDriverWait(self.__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.gtm-new-payment-card-button')))
         add_new_card_element.click()
@@ -254,13 +264,17 @@ class E_boutique():
 
             validate_element = WebDriverWait(self.__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.validationButton')))
             validate_element.click()
+            logging.info('Validatin works when all fields are filled.')
             self.__browser.switch_to.default_content()
             my_account_element = WebDriverWait(self.__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.gtm-header-account-link')))
             self.__browser.execute_script('arguments[0].click()', my_account_element)
         else:
             raise MyException(f'Payment popup took longer than 5 seconds to open". ')
+        logging.info('#End of login STEP.')
 
+    # Verify if the credit card error fields are properlly triggered
     def check_card_warnings(self, card, card_errors):
+        logging.info('#Step : Verify if the credit card error fields are properlly triggered.')
         months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre",
                   "Novembre", "Décembre"]
         self.open_payment_menu
@@ -272,6 +286,7 @@ class E_boutique():
             validate_element = WebDriverWait(self.__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.validationButton')))
 
             # Check when no fields are filled.
+            logging.info('#Check when no fields are filled: 3 errors are visible for card name, date and crypto.')
             validate_element.click()
             error_element = WebDriverWait(self.__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.mess_error')))
             error_lignes = error_element.text.splitlines()
@@ -285,6 +300,7 @@ class E_boutique():
                 raise MyException(f' We were expecting the error: {card_errors["crypto_fail"]}, but received : {error_lignes[2]}". ')
 
             # Check when no expiration and crypto is given
+            logging.info('#Check when no expiration and crypto is given: 2 errors are visible for date and crypto.')
             card_number_element = WebDriverWait(self._E_boutique__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.cardNumber')))
             card_number_element.send_keys(card["name"])
             validate_element = WebDriverWait(self._E_boutique__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.validationButton')))
@@ -299,6 +315,7 @@ class E_boutique():
                 raise MyException(f' We were expecting the error: {card_errors["crypto_fail"]}, but received : {error_lignes[1]}". ')
 
             # Check when no card number is given
+            logging.info('#Check when no card number is given: 1 error are visible for card number.')
             card_number_element = WebDriverWait(self._E_boutique__browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.cardNumber')))
             card_number_element.clear()
             select_month = Select(self.__browser.find_element(By.CSS_SELECTOR,'.vads-expiry-date-input'))
@@ -321,6 +338,16 @@ class E_boutique():
             self.__browser.execute_script('arguments[0].click()', my_account_element)
         else:
             raise MyException(f'Payment popup took longer than 5 seconds to open". ')
+        logging.info('#End of login STEP.')
+
+    def get_available_categories(self):
+        categories = []
+        elements_category = WebDriverWait(self.__browser, 2).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '.details')))
+        for element in elements_category:
+            child_element = element.find_element(By.CSS_SELECTOR, '.sticky ')
+            categories.append(child_element.text.lower())
+        return categories
+
 
 
 

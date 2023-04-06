@@ -19,6 +19,9 @@ The parent with artibute and value and then the child class value.
 "".ng-tns-c175-14 .mat-input-element"
 where "".ng-tns-c175-14" is the class from parent and "".mat-input-element" from child
 
+#Jenkins
+install : https://www.jenkins.io/doc/book/installing/windows/
+
 
 ### Using Javascript
 - find the other child (sibling) of a parent: self._E_boutique__browser.execute_script("""return arguments[0].nextElementSibling""",element)

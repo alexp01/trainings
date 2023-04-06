@@ -1,0 +1,162 @@
+27-03-2023 15:00:10 INFO     [Scenario01.py:20]:### Scenario01 ####################################.
+27-03-2023 15:00:10 INFO     [main_page.py:22]: #Step : Opening the menu option : "Se déplacer" / "Télécharger les horaires".
+27-03-2023 15:00:13 INFO     [main_page.py:45]: #End of STEP.
+27-03-2023 15:00:13 INFO     [main_page.py:50]: #Step : Verify that the url is "https://www.zestbus.fr/telecharger-les-horaires/"
+27-03-2023 15:00:13 INFO     [main_page.py:53]: #End of STEP.
+27-03-2023 15:00:13 INFO     [telecharger_les_horaires.py:62]:#Step : Verifying if all lignes are found in the "Par ligne" dropdown option.
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 1 : Résédas - Gare routière - Marché - Frontière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 2 : Suillet - Lycée P.M. Curie - Gare routière - Marché
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 3 : Val de Borrigo - Oliveraie - Gare routière - Marché
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 4 : Menton Gare Routière - Annonciade
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 5 : Menton Gare routière - EHPAD Gastaldy
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 6 : Castellar - Pinède Haute - Baousset ou Ciappes - Gare routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 7 : Gorbio - Azur Parc - Gare routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 8 : Menton Gare routière - Trabuquet - St Louis - Marché - Gare routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 10 : Sainte Agnès - Les oliviers - Vento - Menton Gare Routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 11 : La Turbie mairie - Stade du Devens - Beausoleil Eglise - Monaco Gare Pont Ste Dévôte
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 12 : Beausoleil Ténao - Eglise - Monaco Casino - Pont Ste Dévôte - Malbousquet - Les Platanes
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 13 : Beausoleil Ténao - Collège Bellevue - Eglise - Monaco Casino - Malbousquet
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 15 : Sospel - Castillon - Monti - Menton Gare Routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 18 : Monaco SNCF - Beausoleil Eglise - Roquebrune Mairie - Carnolès - Menton Pont St-Louis
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 21/22 : Vieux Roquebrune - St-Roman - Mairie - Carnolès - Peglion - Vieux Roquebrune
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 24 : Monaco SteDévôte - Beausoleil Eglise - Vieux Roquebrune - Carnolès - Menton Gare Routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE 25 : Tende - Breil sur Roya - Vintimille - Menton Gare routière
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : Navettes Cimetières N1, N2 et N4
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : Navettes Stade du Devens : N3A et N3B
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE N5 : Boucle de La Turbie
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE B : Beausoleil Les Serres - Palais Gallia
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE F : Moulinet - La Vasta - Sospel
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE G : Cabbé gare - Mont Gros piste d'envol
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LA NAVETTE
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : Lignes Touristiques - La desserte des sites remarquables
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : Circuits Scolaires
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : LIGNE H : Mairie de Beausoleil - École Ténao
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:69]:Found ligne value : Navette Marché de Sospel
+27-03-2023 15:00:14 INFO     [telecharger_les_horaires.py:74]:#Step : Verifying if all lignes are found in the "Par ville" dropdown option.
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Beausoleil
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Breil sur Roya
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Castellar
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Castillon
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Fontan
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Gorbio
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : La Brigue
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : La Turbie
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Menton
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Monaco
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Roquebrune-Cap-Martin
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Sainte-Agnès
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Saorge
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Sospel
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Tende
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:81]:Found city value : Vintimille
+27-03-2023 15:00:15 INFO     [telecharger_les_horaires.py:86]:#Step : Verifying if all stop points are found in the "Par point d intérêt" dropdown option.
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Gare Routière de Menton
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Plage de Sablettes
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Marché de Menton
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Garavan
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Collège Vento
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Casino de Menton
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Casino de Monaco
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Marché de Beausoleil
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Carnolès
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Marché de Carnolès
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Vieux Roquebrune
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Monastère de Saorge
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:95]:Found stop point value : Musée des Merveilles
+27-03-2023 15:00:17 INFO     [telecharger_les_horaires.py:34]:#Step : Select from "Par ligne" option : "LA NAVETTE".
+27-03-2023 15:00:18 INFO     [telecharger_les_horaires.py:101]:#Step : Removing the selected ligne".
+27-03-2023 15:00:19 INFO     [telecharger_les_horaires.py:20]:#Step : Select from "Par ville" option : "Tende".
+27-03-2023 15:00:20 INFO     [telecharger_les_horaires.py:110]:#Step : Removing the selected ligne".
+27-03-2023 15:00:20 INFO     [telecharger_les_horaires.py:48]:#Step : Select from "Par point d intérêt" option : "Marché de Carnolès".
+27-03-2023 15:00:21 INFO     [telecharger_les_horaires.py:119]:#Step : Removing the selected point".
+27-03-2023 15:00:22 INFO     [Scenario01.py:67]:### End of Scenario01.
+27-03-2023 15:00:24 INFO     [Scenario03.py:21]:### Scenario03 ####################################.
+27-03-2023 15:00:24 INFO     [main_page.py:22]: #Step : Opening the menu option : "Se déplacer" / "Télécharger les horaires".
+27-03-2023 15:00:26 INFO     [main_page.py:45]: #End of STEP.
+27-03-2023 15:00:26 INFO     [main_page.py:50]: #Step : Verify that the url is "https://zest.airwebpass.com/"
+27-03-2023 15:00:26 INFO     [main_page.py:53]: #End of STEP.
+27-03-2023 15:00:26 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Création support".
+27-03-2023 15:00:28 INFO     [e_boutique.py:215]:For category: "Création support", ticket type : "Carte sans contact Zest", wa have the price:  "2,00 €"
+27-03-2023 15:00:28 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:28 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Duplicata support".
+27-03-2023 15:00:30 INFO     [e_boutique.py:215]:For category: "Duplicata support", ticket type : "Duplicata carte sans contact Zest", wa have the price:  "10,00 €"
+27-03-2023 15:00:30 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:30 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Tout public".
+27-03-2023 15:00:31 INFO     [e_boutique.py:215]:For category: "Tout public", ticket type : "10 voyages (hors ligne 100)", wa have the price:  "15,00 €"
+27-03-2023 15:00:31 INFO     [e_boutique.py:215]:For category: "Tout public", ticket type : "7 jours (hors ligne 100)", wa have the price:  "13,00 €"
+27-03-2023 15:00:31 INFO     [e_boutique.py:215]:For category: "Tout public", ticket type : "1 mois Tout Public (hors ligne 100) avril", wa have the price:  "38,00 €"
+27-03-2023 15:00:31 INFO     [e_boutique.py:215]:For category: "Tout public", ticket type : "1 an Tout Public (hors ligne 100)", wa have the price:  "350,00 €"
+27-03-2023 15:00:31 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:31 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Jeune".
+27-03-2023 15:00:32 INFO     [e_boutique.py:215]:For category: "Jeune", ticket type : "1 mois Jeune -18 ans (hors ligne 100) avril", wa have the price:  "12,00 €"
+27-03-2023 15:00:32 INFO     [e_boutique.py:215]:For category: "Jeune", ticket type : "1 an Jeune -18 ans", wa have the price:  "112,00 €"
+27-03-2023 15:00:32 INFO     [e_boutique.py:215]:For category: "Jeune", ticket type : "1 mois Jeune 18 - 26 ans (hors ligne 100) avril", wa have the price:  "12,00 €"
+27-03-2023 15:00:32 INFO     [e_boutique.py:215]:For category: "Jeune", ticket type : "1 an Jeune 18 - 26 ans", wa have the price:  "112,00 €"
+27-03-2023 15:00:32 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:32 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Tarif réduit".
+27-03-2023 15:00:34 INFO     [e_boutique.py:215]:For category: "Tarif réduit", ticket type : "1 mois Avantage (hors ligne 100) avril", wa have the price:  "19,00 €"
+27-03-2023 15:00:34 INFO     [e_boutique.py:215]:For category: "Tarif réduit", ticket type : "1 mois CMU - CSS (hors ligne 100) avril", wa have the price:  "17,50 €"
+27-03-2023 15:00:34 INFO     [e_boutique.py:215]:For category: "Tarif réduit", ticket type : "1 mois Citron (hors ligne 100) avril", wa have the price:  "0,00 €"
+27-03-2023 15:00:34 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:34 INFO     [e_boutique.py:200]:#Step : Check the tickets name and price for category : "Ramassage scolaire".
+27-03-2023 15:00:35 INFO     [e_boutique.py:215]:For category: "Ramassage scolaire", ticket type : "1 an ramassage scolaire", wa have the price:  "10,00 €"
+27-03-2023 15:00:35 INFO     [e_boutique.py:216]:#End of STEP.
+27-03-2023 15:00:35 INFO     [Scenario03.py:37]:### End of Scenario03.
+27-03-2023 15:00:37 INFO     [Scenario04.py:21]:### Scenario04 ####################################.
+27-03-2023 15:00:37 INFO     [main_page.py:22]: #Step : Opening the menu option : "Se déplacer" / "Télécharger les horaires".
+27-03-2023 15:00:40 INFO     [main_page.py:45]: #End of STEP.
+27-03-2023 15:00:40 INFO     [main_page.py:50]: #Step : Verify that the url is "https://zest.airwebpass.com/"
+27-03-2023 15:00:40 INFO     [main_page.py:53]: #End of STEP.
+27-03-2023 15:00:43 INFO     [e_boutique.py:220]:#Step : Checks if all categories can be extended and hidden. With check.".
+27-03-2023 15:00:43 INFO     [e_boutique.py:225]:The category "Tout sélectionner" is now extended.
+27-03-2023 15:00:43 INFO     [e_boutique.py:229]:The category "Tout sélectionner" is now hidden.
+27-03-2023 15:00:43 INFO     [e_boutique.py:148]:The Category: "Création support" is already expanded. No need to click expand.
+27-03-2023 15:00:43 INFO     [e_boutique.py:225]:The category "Création support" is now extended.
+27-03-2023 15:00:44 INFO     [e_boutique.py:229]:The category "Création support" is now hidden.
+27-03-2023 15:00:45 INFO     [e_boutique.py:225]:The category "Duplicata support" is now extended.
+27-03-2023 15:00:46 INFO     [e_boutique.py:229]:The category "Duplicata support" is now hidden.
+27-03-2023 15:00:48 INFO     [e_boutique.py:225]:The category "Tout public" is now extended.
+27-03-2023 15:00:49 INFO     [e_boutique.py:229]:The category "Tout public" is now hidden.
+27-03-2023 15:00:50 INFO     [e_boutique.py:225]:The category "Jeune" is now extended.
+27-03-2023 15:00:51 INFO     [e_boutique.py:229]:The category "Jeune" is now hidden.
+27-03-2023 15:00:52 INFO     [e_boutique.py:225]:The category "Tarif réduit" is now extended.
+27-03-2023 15:00:53 INFO     [e_boutique.py:229]:The category "Tarif réduit" is now hidden.
+27-03-2023 15:00:55 INFO     [e_boutique.py:225]:The category "Ramassage scolaire" is now extended.
+27-03-2023 15:00:56 INFO     [e_boutique.py:229]:The category "Ramassage scolaire" is now hidden.
+27-03-2023 15:00:56 INFO     [e_boutique.py:230]:#End of login STEP.
+27-03-2023 15:00:56 INFO     [Scenario04.py:34]:### End of Scenario04.
+27-03-2023 15:00:57 INFO     [Scenario05.py:23]:### Scenario05 ####################################.
+27-03-2023 15:00:57 INFO     [main_page.py:22]: #Step : Opening the menu option : "Se déplacer" / "Télécharger les horaires".
+27-03-2023 15:01:00 INFO     [main_page.py:45]: #End of STEP.
+27-03-2023 15:01:00 INFO     [e_boutique.py:39]:#Step : Perform a login for user "tomhank1601@gmail.com".
+27-03-2023 15:01:01 INFO     [e_boutique.py:44]:#End of login STEP.
+27-03-2023 15:01:01 INFO     [main_page.py:50]: #Step : Verify that the url is "https://zest.airwebpass.com/auth/"
+27-03-2023 15:01:01 INFO     [main_page.py:53]: #End of STEP.
+27-03-2023 15:01:05 INFO     [e_boutique.py:234]:#Step : Verify the email of the account.
+27-03-2023 15:01:05 INFO     [e_boutique.py:241]:Found email : tomhank1601@gmail.com.
+27-03-2023 15:01:05 INFO     [e_boutique.py:242]:#End of login STEP.
+27-03-2023 15:01:08 INFO     [e_boutique.py:246]:#Step : Verify if the credit card fields are editable and if the card is added.
+27-03-2023 15:01:11 INFO     [e_boutique.py:267]:Validatin works when all fields are filled.
+27-03-2023 15:01:11 INFO     [e_boutique.py:273]:#End of login STEP.
+27-03-2023 15:01:11 INFO     [e_boutique.py:277]:#Step : Verify if the credit card error fields are properlly triggered.
+27-03-2023 15:01:16 INFO     [e_boutique.py:289]:#Check when no fields are filled: 3 errors are visible for card name, date and crypto.
+27-03-2023 15:01:17 INFO     [e_boutique.py:303]:#Check when no expiration and crypto is given: 2 errors are visible for date and crypto.
+27-03-2023 15:01:18 INFO     [e_boutique.py:318]:#Check when no card number is given: 1 error are visible for card number.
+27-03-2023 15:01:19 INFO     [e_boutique.py:341]:#End of login STEP.
+27-03-2023 15:01:20 INFO     [Scenario05.py:51]:### End of Scenario05.
+27-03-2023 15:01:21 INFO     [Scenario06.py:22]:### Scenario04 ####################################.
+27-03-2023 15:01:21 INFO     [main_page.py:22]: #Step : Opening the menu option : "Se déplacer" / "Télécharger les horaires".
+27-03-2023 15:01:24 INFO     [main_page.py:45]: #End of STEP.
+27-03-2023 15:01:24 INFO     [main_page.py:50]: #Step : Verify that the url is "https://zest.airwebpass.com/"
+27-03-2023 15:01:24 INFO     [main_page.py:53]: #End of STEP.
+27-03-2023 15:01:26 INFO     [e_boutique.py:120]:The filter "Jeune", was enabled.
+27-03-2023 15:01:26 INFO     [e_boutique.py:120]:The filter "Duplicata support", was enabled.
+27-03-2023 15:01:27 INFO     [e_boutique.py:120]:The filter "Tarif réduit", was enabled.
+27-03-2023 15:01:28 INFO     [e_boutique.py:129]:The filter "Duplicata support", was enabled.
+27-03-2023 15:01:28 INFO     [e_boutique.py:120]:The filter "Tout public", was enabled.
+27-03-2023 15:01:29 INFO     [e_boutique.py:129]:The filter "Tout public", was enabled.
+27-03-2023 15:01:29 INFO     [e_boutique.py:129]:The filter "Jeune", was enabled.
+27-03-2023 15:01:30 INFO     [e_boutique.py:129]:The filter "Tarif réduit", was enabled.
+27-03-2023 15:01:30 INFO     [e_boutique.py:120]:The filter "Tout sélectionner", was enabled.
+27-03-2023 15:01:31 INFO     [Scenario06.py:65]:### End of Scenario04.
+27-03-2023 15:01:31 INFO     [all_tests.py:17]:### All tests are PASSED

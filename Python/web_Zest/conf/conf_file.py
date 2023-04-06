@@ -1,6 +1,4 @@
 
-
-
 menu = {"Se déplacer" : ["Préparer un itinéraire",
                          "Télécharger les horaires",
                          "Télécharger les plans",
@@ -21,12 +19,11 @@ menu = {"Se déplacer" : ["Préparer un itinéraire",
                              "Dépositaire ticket 10 voyages",
                              "Pass Sud Azur",
                              "Avantages Club Zest"],
-        "Tourisme" : True,
-        "Contact" : True}
+        "Tourisme" : None,
+        "Contact" : None}
 
 url = {"Accès E-boutique" : ["https://zest.airwebpass.com/", "https://zest.airwebpass.com/auth/"],
        "Télécharger les horaires" : "https://www.zestbus.fr/telecharger-les-horaires/"}
-
 
 user1 = "tomhank1601@gmail.com"
 user1_psw = "Tomhank2011#"
@@ -118,16 +115,16 @@ ticket_categories = { "Création support" : [
                     "Tout public": [
                     { "name" : "10 voyages (hors ligne 100)", "price" : "15,00 €"},
                     { "name" : "7 jours (hors ligne 100)", "price" : "13,00 €"},
-                    { "name" : "1 mois Tout Public (hors ligne 100) mars", "price" : "38,00 €"},
+                    { "name" : "1 mois Tout Public (hors ligne 100) avril", "price" : "38,00 €"},
                     { "name" : "1 an Tout Public (hors ligne 100)", "price" : "350,00 €"}],
                     "Jeune": [
-                    { "name" : "1 mois Jeune -18 ans (hors ligne 100) mars", "price" : "12,00 €"},
+                    { "name" : "1 mois Jeune -18 ans (hors ligne 100) avril", "price" : "12,00 €"},
                     { "name" : "1 an Jeune -18 ans", "price" : "112,00 €"},
-                    { "name" : "1 mois Jeune 18 - 26 ans (hors ligne 100) mars", "price" : "12,00 €"},
+                    { "name" : "1 mois Jeune 18 - 26 ans (hors ligne 100) avril", "price" : "12,00 €"},
                     { "name" : "1 an Jeune 18 - 26 ans", "price" : "112,00 €"}],
                     "Tarif réduit": [
-                    { "name" : "1 mois Avantage (hors ligne 100) mars", "price" : "19,00 €"},
-                    { "name" : "1 mois CMU - CSS (hors ligne 100) mars", "price" : "17,50 €"},
-                    { "name" : "1 mois Citron (hors ligne 100) mars", "price" : "0,00 €"}],
+                    { "name" : "1 mois Avantage (hors ligne 100) avril", "price" : "19,00 €"},
+                    { "name" : "1 mois CMU - CSS (hors ligne 100) avril", "price" : "17,50 €"},
+                    { "name" : "1 mois Citron (hors ligne 100) avril", "price" : "0,00 €"}],
                     "Ramassage scolaire": [
                     { "name" : "1 an ramassage scolaire", "price" : "10,00 €"}]}

@@ -57,7 +57,6 @@ class Telecharger_les_horaires():
         element_to_select = WebDriverWait(self.__browser, 2).until(EC.presence_of_element_located((By.CSS_SELECTOR, f'[id="react-autowhatever-autoSuggestpointsOfInterestInput--item-{index_to_select}"]')))
         self.__browser.execute_script("arguments[0].scrollIntoView(true);", element_to_select);
         self.__browser.execute_script('arguments[0].click()', element_to_select)
-        print("eee")
 
     def verify_lignes(self, lignes):
         logging.info('#Step : Verifying if all lignes are found in the "Par ligne" dropdown option.')
@@ -93,7 +92,6 @@ class Telecharger_les_horaires():
         list_of_dropdown_elements = WebDriverWait(self.__browser, 5).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '[id^= "react-autowhatever-autoSuggestpointsOfInterestInput--item-"]')))
         for index, option_in_list in enumerate(list_of_dropdown_elements):
             option_in_list_text = option_in_list.text
-            print(option_in_list_text)
             logging.info(f'Found stop point value : {option_in_list_text}')
             if points[index] != option_in_list_text:
                 return index

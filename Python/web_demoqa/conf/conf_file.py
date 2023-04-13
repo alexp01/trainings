@@ -40,8 +40,31 @@ Elements_options_mapping = {
         Elements.Buttons.name: 'Buttons',
         Elements.Links.name: 'Links',
         Elements.Broken_Links_Images.name: 'Broken Links - Images',
-        Elements.Upload_and_Download.name: 'Upload And Download',
+        Elements.Upload_and_Download.name: 'Upload and Download',
         Elements.Dynamic_Properties.name: 'Dynamic Properties'
+    }
+
+class Widgets(Enum):
+    Accordian = 1
+    Auto_complete = 2
+    Data_picker = 3
+    Slider = 4
+    Progress_Bar = 5
+    Tabs = 6
+    Tool_tips = 7
+    Menu = 8
+    Select_menu = 9
+
+Widgets_options_mapping = {
+        Widgets.Accordian.name: 'Accordian',
+        Widgets.Auto_complete.name: 'Auto Complete',
+        Widgets.Data_picker.name: 'Data Picker',
+        Widgets.Slider.name: 'Slider',
+        Widgets.Progress_Bar.name: 'Progress Bar',
+        Widgets.Tabs.name: 'Tabs',
+        Widgets.Tool_tips.name: 'Tool Tips',
+        Widgets.Menu.name: 'Menu',
+        Widgets.Select_menu.name: 'Select Menu',
     }
 
 # its not used.
@@ -50,5 +73,7 @@ folders = { "Home" : { "Desktop" : [ "Notes", "Commands" ],
 							     "Office" : [ "Public", "Private", "Classified", "General" ] },
 			     "Download" : [ "Word File.doc", "Excel File.doc" ] }}
 
-web_table_values = [{ "first_name" : "Toto", "last_name" : "titi", "age" : 33, "email" : "toto@gmail.fr", "salary" : 5000, "department" : "Banking" },
-                    { "first_name" : "Toto2", "last_name" : "titi2", "age" : 38, "email" : "toto2@gmail.fr", "salary" : 5100, "department" : "Finance" }]
+web_table_values = [{ "first_name" : "Toto", "last_name" : "titi", "age" : "33", "email" : "toto@gmail.fr", "salary" : "5000", "department" : "Banking"},
+                    { "first_name" : "Toto2", "last_name" : "titi2", "age" : "38", "email" : "toto2@gmail.fr", "salary" : "5100", "department" : "Finance"}]
+
+web_table_updates = [{ "first_name" : None, "last_name" : None, "age" : "35", "email" : "toto2new@gmail.fr", "salary" : None, "department" : None}]

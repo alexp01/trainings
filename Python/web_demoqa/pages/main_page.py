@@ -7,6 +7,7 @@ from datetime import timedelta, date
 import time
 from pathlib import Path
 import os
+from selenium.webdriver.common.keys import Keys
 
 from .common.log import *
 
@@ -85,6 +86,8 @@ class Main_page():
                 url = self.__browser.current_url
                 if element.text.split()[0].lower() not in url.split("/")[-1]:
                    raise MyException(f'The current url: "{url}" does not contain the option text : "{element.text.split()[0].lower()}".')
+
+    # Scenario 1
 
     # Performing tests on "Text Box" option
 
@@ -368,6 +371,8 @@ class Main_page():
     def refresh(self):
         self.__browser.refresh()
         self.__go_back
+
+    # will check that button is visible after at least 5 seconds
     def elements_check_button_visible_5_secs(self):
         start = time.time()
         element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "visibleAfter")))
@@ -375,6 +380,7 @@ class Main_page():
         assert final >= 5, f'The button was visible after 5 secods. It took: "{final}'
         logging.info(f'The button was visible after 5 secods. It took: "{final}')
 
+    # will check that button is enabled after at least 5 seconds
     def elements_check_button_enable_5_secs(self):
         start = time.time()
         self.refresh
@@ -382,3 +388,237 @@ class Main_page():
         final = time.time() - start
         assert final >= 5, f'The button was enabled after 5 secods. It took: "{final}'
         logging.info(f'The button was enabled after 5 secods. It took: "{final}')
+
+    # Scenario 2
+
+    # Performing tests on "Auto Complete" option
+
+    # will check the autosugest values based on harcoded argument
+    def widgets_verify_auto_complete (self, values):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "autoCompleteMultipleInput")))
+        element.send_keys("a")
+        suggestions = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".auto-complete__option")))
+        for index, suggestion in enumerate(suggestions):
+            assert suggestion.text == values[index], f'The found suggestion is not the expected one. Expecting: "{values[index]}", Found : "{suggestion.text}"'
+
+    # Performing tests on "Date Picker" option
+
+    # will select a date by adding it as a text
+    def widgets_insert_text_date (self, text_date):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "datePickerMonthYearInput")))
+        element.send_keys(Keys.CONTROL + "a")
+        element.send_keys(Keys.BACKSPACE)
+        element.send_keys(text_date)
+
+    # will pick a date from popup
+    def widgets_select_date (self, text_date):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "datePickerMonthYearInput")))
+        element.click()
+
+        month, day, year = text_date.split('/')
+        year_element = WebDriverWait(self.__browser, self.__timeout).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".react-datepicker__year-select")))
+        select_year = Select(year_element)
+        select_year.select_by_visible_text(year)
+
+        month_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".react-datepicker__month-select")))
+        select_month = Select(month_element)
+        select_month.select_by_value(str(int(month) - 1))
+
+        days_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__day")))
+        for index, day_element in enumerate(days_element):
+            if (day_element.text == (str(int(day)))) and (index > 8):
+                day_element.click()
+                break
+        else:
+            raise MyException(f'Could not locate the day: "{day}".')
+
+    # will verify the selected date.
+    def widgets_verify_date(self, text_date):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "datePickerMonthYearInput")))
+        selected_date = element.get_attribute("value")
+        assert element.get_attribute("value") == selected_date, f'The selected date is not the expected one. Expecting: "{text_date}", Found : "{selected_date}"'
+        logging.info(f'The selected date is: "{selected_date}')
+
+    # will select a date+time by adding it as a text
+    def widgets_insert_text_date_and_time (self, text_date):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "dateAndTimePickerInput")))
+        element.send_keys(Keys.CONTROL + "a")
+        element.send_keys(Keys.BACKSPACE)
+        element.send_keys(text_date)
+
+    # will select a date+ time
+    def widgets_select_date_and_time(self, text_date_and_time):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "dateAndTimePickerInput")))
+        element.click()
+        date_and_time = text_date_and_time.split('/')
+        time = date_and_time[-1]
+
+        month, day, year = date_and_time[0:3]
+        if int(day) < 1 or int(day) > 31:
+            raise MyException('The day must have a value between 1 and 31".')
+        if int(month) < 1 or int(month) > 12:
+            raise MyException('The month must have a value between 1 and 12".')
+        if int(year) < 1950 or int(year) > 2050:
+            raise MyException('The year must have a value between 1950 and 2050".')
+
+        #select year
+        year_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".react-datepicker__year-read-view--selected-year")))
+        year_element.click()
+        years_value_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__year-option")))
+        visible_years = []
+        for year_element in years_value_element:
+            year_value = year_element.text
+            if len(year_value) > 4:
+                child_element_text = year_element.find_element(By.CSS_SELECTOR, "*").text
+                year_value = year_value.replace(child_element_text+'\n', '')
+            # the bellow solution is more hardcoded, as the child text character might change.
+            '''
+            if year_element.text != '':
+                if "✓\n" in year_element.text:
+                    year_value = year_element.text[-4:]
+                else:
+                    year_value = year_element.text
+            '''
+            if year_value:
+                visible_years.append(year_value)
+        # the below code will scroll the searched year in order for it to be selectable.
+        if year in visible_years:
+            index = visible_years.index(year)+1
+            years_value_element[index].click()
+        elif int(year) > int(visible_years[0]):
+            diff_years = int(year) - int(visible_years[0])
+            for index in range(diff_years):
+                years_value_element[0].click()
+            year_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__year-option")))
+            if year_element[1].text == year:
+                year_element[1].click()
+            else:
+                raise MyException(f'We did not sufficiently scroll up in order to have in the first line in the year: "{year}".')
+        elif int(year) < int(visible_years[-2]):
+            diff_years = int(visible_years[-2]) - int(year) - 1
+            for index in range(diff_years):
+                years_value_element[-1].click()
+            year_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__year-option")))
+            if year_element[-2].text == year:
+                year_element[-2].click()
+        else:
+            raise MyException(f'Could not locate the year: "{year}".')
+
+        # select month
+        months_list = ["January", "February", "March", "April", "May", "June", "Jully", "August", "September", "October", "November", "December"]
+        month_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".react-datepicker__month-read-view--selected-month")))
+        month_element.click()
+        month_values_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__month-option")))
+        if month_values_element[int(month)-1].text == months_list[int(month)-1]:
+            month_values_element[int(month)-1].click()
+        else:
+            raise MyException(f'Could not locate the month: "{month}".')
+
+        # select day
+
+        # this solution seems simpler, compared to how I selected the day in the previous datepicker element.
+        # here we look over 2 times, and not in all 42 elements.
+        # but this solution is dependent on a particular string in the class atribute.
+        day_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__day--" + day.zfill(3))))
+        for element in day_element:
+            if "react-datepicker__day--outside-month" not in element.get_attribute("class"):
+                element.click()
+                break
+        else:
+            raise MyException(f'Could not locate the day: "{day}".')
+
+        # select time
+        time_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".react-datepicker__time-list-item")))
+        for element in time_element:
+            if element.text == time:
+                element.click()
+                break
+        else:
+            raise MyException(f'Could not locate the time: "{time}".')
+
+    # will verify the selected date and time.
+    def widgets_verify_date_and_time(self, text_date_and_time):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "dateAndTimePickerInput")))
+        selected_date = element.get_attribute("value")
+        assert element.get_attribute("value") == selected_date, f'The selected date is not the expected one. Expecting: "{text_date_and_time}", Found : "{selected_date}"'
+        logging.info(f'The selected date and time is: "{selected_date}"')
+
+    # Performing tests on "Slider" option
+
+    # will click left or right key, until it will reach the correct value
+    def widgets_set_slide_value_option1(self, slide_value):
+        element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".range-slider")))
+        current_value = int(element.get_attribute("value"))
+        if current_value < slide_value:
+            final_index = slide_value - current_value
+            for index in range(final_index):
+                element.send_keys(Keys.RIGHT)
+        else:
+            final_index =  current_value - slide_value
+            for index in range(final_index):
+                element.send_keys(Keys.LEFT)
+        changed_value = int(element.get_attribute("value"))
+        assert changed_value == slide_value, f'The slide changed value is not correct. Expecting: "{slide_value}", Found : "{changed_value}"'
+        logging.info(f'The slider value was set to: "{changed_value}"')
+
+    # will move the slide using ActionChain.
+    # this solution is not that precise, especially more near the edges, as probably ActionChain is not that precise.
+    # the offset value should probably take into account the pixels also.
+    def widgets_set_slide_value_option2(self, slide_value):
+        element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".range-slider")))
+        #current_value = int(element.get_attribute("value"))
+        action = ActionChains(self.__browser)
+        scroll_with = int(element.get_attribute("scrollWidth"))
+        if slide_value == 50:
+            offset = 0
+        elif slide_value < 50:
+            offset = -(scroll_with / 100) * slide_value
+        else:
+            offset = (scroll_with / 100) * slide_value
+
+        action.click_and_hold(element).move_by_offset(offset, 0).release().perform()
+
+    # Performing tests on "Progress Bar" option
+
+    # will check that the progress file has finish loading
+    @property
+    def widgets_verify_progress_bar_finish(self):
+        start_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "startStopButton")))
+        start_time= time.time()
+        progress_bar_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
+        initial_value = int(progress_bar_element.get_attribute("aria-valuenow"))
+        self.__browser.execute_script("arguments[0].scrollIntoView(true);", progress_bar_element)
+        assert initial_value == 0, f'The slide initial value is not 0%. Expecting: 0%, Found : "{initial_value}"'
+        start_element.click()
+
+        for index in range(20):
+            current_value = int(progress_bar_element.get_attribute("aria-valuenow"))
+            if current_value == 100:
+                break
+            time.sleep(1)
+        else:
+            raise MyException('The progress bar did not finish in the limit timframe of 10  secs.')
+
+        finish_time = time.time() - start_time
+        reset_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "resetButton")))
+        reset_element.click()
+        logging.info(f'The progress bar was loaded to 100% in : "{finish_time}" seconds')
+
+    # will stop the progres bar at a specific value.
+    def widgets_stop_progress_bar(self, stop_value):
+        start_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "startStopButton")))
+        start_element.click()
+        progress_bar_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
+        self.__browser.execute_script("arguments[0].scrollIntoView(true);", progress_bar_element)
+        not_reached = True
+        while not_reached:
+            if stop_value == int(progress_bar_element.get_attribute("aria-valuenow")):
+                start_element.click()
+                break
+        else:
+            raise MyException(f'The progress bar value: "{stop_value}" was not found/reached.')
+        bar_value = int(progress_bar_element.get_attribute("aria-valuenow"))
+        logging.info(f'The progress bar was stopped at : "{bar_value}" %')

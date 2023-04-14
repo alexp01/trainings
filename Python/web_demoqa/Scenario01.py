@@ -11,7 +11,7 @@ from pages.common.log import *
 import time
 
 chromeDriver = Driver(page = "https://demoqa.com/")
-options = ["start-maximized", "--incognito"]
+options = ["start-maximized"]
 browser = chromeDriver.start(options)
 
 logging.info('### Scenario01 ####################################.')

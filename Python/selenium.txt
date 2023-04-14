@@ -88,7 +88,7 @@ Or using action chain:
 Or the clasic click just does not work, like when you have 2 iframes and you want to click on the one in the background.
 In this case use : self._E_boutique__browser.execute_script('arguments[0].click()', element_to_click)
 
-6. When a text is hidden, and i'ts not in the DOM (even if you have well located the element), like an email you can still get the text value ba using:
+6. When a text is hidden, and its not in the DOM (even if you have well located the element), like an email you can still get the text value ba using:
 a. elements_category.get_attribute('value')
 b. self._E_boutique__browser.execute_script("return arguments[0].value", elements_category)
 exemple when the email text is not in the DOM:
@@ -103,3 +103,8 @@ select_year = Select(self._E_boutique__browser.find_element(By.CSS_SELECTOR, '[n
 select_year.select_by_value("2")   # <option value="2"> 02-Février </option>
 
 select_year.select_by_visible_text("2025") # <option value="2025"> 2025</option>
+
+8. When you edit a text field and the previous filled value does not go away with .clear(), you can dp:
+        element.send_keys(Keys.CONTROL + "a")
+        element.send_keys(Keys.BACKSPACE)
+

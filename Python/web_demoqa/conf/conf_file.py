@@ -47,7 +47,7 @@ Elements_options_mapping = {
 class Widgets(Enum):
     Accordian = 1
     Auto_complete = 2
-    Data_picker = 3
+    Date_picker = 3
     Slider = 4
     Progress_Bar = 5
     Tabs = 6
@@ -58,7 +58,7 @@ class Widgets(Enum):
 Widgets_options_mapping = {
         Widgets.Accordian.name: 'Accordian',
         Widgets.Auto_complete.name: 'Auto Complete',
-        Widgets.Data_picker.name: 'Data Picker',
+        Widgets.Date_picker.name: 'Date Picker',
         Widgets.Slider.name: 'Slider',
         Widgets.Progress_Bar.name: 'Progress Bar',
         Widgets.Tabs.name: 'Tabs',

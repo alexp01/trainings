@@ -1,0 +1,12 @@
+14-04-2023 16:46:26 INFO     [Scenario02.py:17]:### Scenario02 ####################################.
+14-04-2023 16:46:27 INFO     [Scenario02.py:24]:Performing tests on "Auto Complete" optiton
+14-04-2023 16:46:30 INFO     [Scenario02.py:29]:Performing tests on "Date Picker" optiton
+14-04-2023 16:46:33 INFO     [main_page.py:443]:The selected date is: "01/01/2024
+14-04-2023 16:46:34 INFO     [main_page.py:443]:The selected date is: "05/29/2025
+14-04-2023 16:46:36 INFO     [main_page.py:547]:The selected date and time is: "September 9, 2040 3:45 PM"
+14-04-2023 16:46:36 INFO     [Scenario02.py:41]:Performing tests on "Slider" optiton
+14-04-2023 16:46:40 INFO     [main_page.py:565]:The slider value was set to: "10"
+14-04-2023 16:46:40 INFO     [Scenario02.py:47]:Performing tests on "Progress Bar" optiton
+14-04-2023 16:46:54 INFO     [main_page.py:608]:The progress bar was loaded to 100% in : "10.279192447662354" seconds
+14-04-2023 16:47:00 INFO     [main_page.py:624]:The progress bar was stopped at : "57" %
+14-04-2023 16:47:00 INFO     [Scenario02.py:53]:Performing tests on "Tool tips" optiton

@@ -49,4 +49,9 @@ do_mp.click_option(Widgets_options_mapping[Widgets.Progress_Bar.name])
 do_mp.widgets_verify_progress_bar_finish
 do_mp.widgets_stop_progress_bar(57)
 
+# Performing tests on "Tool tips" option
+logging.info('Performing tests on "Tool tips" optiton')
+do_mp.click_option(Widgets_options_mapping[Widgets.Tool_tips.name])
+do_mp.check_hover_button
+
 logging.info('### End of Scenario02.')

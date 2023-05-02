@@ -611,7 +611,7 @@ class Main_page():
     def widgets_stop_progress_bar(self, stop_value):
         start_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "startStopButton")))
         start_element.click()
-        progress_bar_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
+        progress_bar_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
         self.__browser.execute_script("arguments[0].scrollIntoView(true);", progress_bar_element)
         not_reached = True
         while not_reached:
@@ -622,3 +622,16 @@ class Main_page():
             raise MyException(f'The progress bar value: "{stop_value}" was not found/reached.')
         bar_value = int(progress_bar_element.get_attribute("aria-valuenow"))
         logging.info(f'The progress bar was stopped at : "{bar_value}" %')
+
+    # Performing tests on "Tool tips" option
+
+    # will check that a text will appear when button is hoovered.
+    @property
+    def check_hover_button(self):
+        start_element = WebDriverWait(self.__browser, self.__timeout).until(EC.presence_of_element_located((By.ID, "toolTipButton")))
+        action = ActionChains(self.__browser)
+        action.move_to_element(start_element).perform()
+        tooltip_element = WebDriverWait(self._Main_page__browser, self._Main_page__timeout).until(EC.presence_of_element_located((By.ID, "buttonToolTip")))
+        assert tooltip_element.text == 'You hovered over the Button', f'The button tooltip message is correct: "{tooltip_element.text}"'
+
+
